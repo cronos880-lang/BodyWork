@@ -1,0 +1,48 @@
+INFORME DE PRUEBAS - RC BODYWORK V1.4.3
+======================================
+Fecha: 28/10/2026
+Base intacta: V1.4.2, conservada como resguardo.
+
+CAMBIO DE V1.4.3
+- Las pegatinas altas (franjas superiores o roof_prisms) podían tapar
+  la frase inferior de impresión en la V1.4.2.
+- La frase ahora solo aparece en la primera página de instrucciones.
+- Regla de 100 mm presente en las ocho páginas. Los dibujos no se
+  mueven, recortan ni redimensionan.
+- Se reconoce la versión 1.4.3 al volver a abrir un proyecto guardado.
+
+COMPROBACIONES REALIZADAS
+1. Archivo ZIP fuente V1.4.2: verificación CRC sin errores.
+2. Proyecto Lola VIP heredado: abre y recupera 4 pegatinas superiores y
+   una lateral; se conservan las dos fotos originales.
+3. Exportación PDF normal: ocho páginas A4 horizontal, 297 x 210 mm.
+4. Exportación PDF interior: ocho páginas A4 horizontal, 297 x 210 mm.
+5. Los laterales A/B, cruzados entre normal e interior, son idénticos por
+   píxeles en toda la zona de dibujo; no se pierde la segunda vista.
+6. Las ilustraciones de V1.4.2 y V1.4.3 mantienen idénticos los píxeles
+   en la zona del diseño; solo se modifica el texto inferior conflictivo.
+7. Guardar proyecto y abrirlo nuevamente: PDF normal e interior resultan
+   idénticos byte a byte a los generados antes de cerrar.
+8. Guardado de proyecto: solo normalización de campos vacíos de recorte
+   (cutRect=null y eraseRects=[]); todas las pegatinas conservan su aspecto.
+9. 'roof_prisms' como pieza suelta: dos hojas PDF en normal e interior;
+   pieza completa y sin pisar el texto del pie.
+10. Si se invalidan la imagen raster y la del logo almacenadas en memoria,
+    el exportador las recupera: PDF idéntico al original.
+11. Si se elimina el recurso del logo, se avisa con mensaje específico;
+    no se genera PDF incompleto silenciosamente.
+12. Diálogo de guardado simulado: salida PDF correcta al escritor.
+13. Error de escritura simulado: se ofrece y produce descarga alternativa.
+14. PNG superior y lateral: ambos exportan imágenes PNG válidas con los
+    tamaños esperados, 878x768 y 1167x768.
+15. Sin errores JavaScript de ejecución en las exportaciones estándar.
+    Chrome muestra avisos no bloqueantes de rendimiento de Canvas.
+
+COMPROBACIONES PENDIENTES EN EL EQUIPO FÍSICO
+- Comprobar el selector de carpeta y nombre real de Windows/Edge/Chrome,
+  no solo sus caminos simulados en el navegador automatizado.
+- Imprimir al 100 % sin ajustar a página y medir la regla de 100 mm.
+- Ensayar el encaje físico de las pegatinas en la carrocería.
+
+NO SE HAN MODIFICADO imágenes, kits, logos, cartas de pintura ni
+proyectos originales. Solo RC_Bodywork.html y LEEME.txt difieren de V1.4.2.

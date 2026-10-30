@@ -1,0 +1,69 @@
+RC BODYWORK V1.4.5 - INFORME DE CORRECCIÓN Y PRUEBAS
+===================================================
+28/10/2026
+
+PROBLEMA REPRODUCIDO
+- El exportador V1.4.4 genera una o más páginas POR PEGATINA lateral,
+  aunque esas piezas formen una sola decoración combinada en el editor.
+- Con el proyecto original de Lola VIP (4 pegatinas superiores, una lateral)
+  y 3 elementos adicionales colocados sobre ese lateral se reprodujo
+  exactamente la incidencia: V1.4.4 generaba 14 páginas, sin errores.
+- No se dispone del archivo .rcbody actual del usuario con el fallo, por lo
+  que el caso reproducido es una regresión representativa, no una copia
+  literal de ese proyecto no aportado.
+
+CORRECCIÓN
+- Al exportar un lateral con varias pegatinas, se componen TODAS sobre
+  un mismo dibujo transparente a escala real y en su orden de capas.
+- La composición se imprime en las 2 hojas laterales A4 previstas para
+  cada lado (con un solape de 20 mm). La cara B se refleja a partir de A.
+- El original de una sola pegatina raster conserva el recorrido anterior,
+  sin modificar sus píxeles ni su colocación.
+- Se mantienen las tres hojas superiores del proyecto Lola original.
+- No se generan hojas extra por recortes aislados de objetos que se
+  superponen dentro de una misma decoración.
+- Si una pegatina o el conjunto excede realmente los 450 x 124 mm del
+  lateral a escala 1:1, se informa con sus medidas y NO se entrega una
+  colección engañosa de fragmentos ni se reduce su tamaño.
+- En la vista superior, si una pieza no cabe en A4 de una sola pieza, se
+  notifica sin recortarla ni generar hojas arbitrarias.
+- Título visible y pestaña: V1.4.5; los proyectos guardados con esta
+  versión y versiones anteriores siguen siendo compatibles.
+
+PRUEBAS AUTOMATIZADAS / ARCHIVOS REALES
+1. V1.4.4 + 4 pegatinas laterales: 14 páginas PDF; incidencia reproducida.
+2. V1.4.5 + MISMO proyecto: 8 páginas PDF normal, 8 en espejo, sin alertas.
+3. Lola VIP original V1.4.5: 8 + 8 páginas PDF, archivo BYTE A BYTE
+   idéntico a la exportación V1.4.4, tanto normal como espejo.
+4. Inspección visual de todas las páginas con render PDF: pegatinas
+   agrupadas, sin páginas aisladas de colores ni restos de piezas.
+5. Solape entre hojas de cada lateral: media de diferencia < 0,15/255
+   por canal de color por la compresión JPEG. Se mantiene solape 20 mm.
+6. Comparación Normal A contra Espejo B y viceversa: diferencia EXACTA
+   de 0 píxeles en el área de dibujo de cada una de las cuatro hojas.
+7. Guardar el proyecto con varias pegatinas, reabrir y exportar:
+   PDF de 8 páginas idéntico BYTE A BYTE al PDF anterior al guardado.
+8. Exportación PNG superior y lateral: 878x768 y 1167x768;
+   BINARIAMENTE IGUALES a las exportaciones de V1.4.4.
+9. Pieza `roof_prisms` junto al borde, tamaño 30 %: exporta normal y espejo
+   sin error. Ejemplo sintético diferente de la plantilla Lola de 8 hojas.
+10. Pieza `roof_prisms` de tamaño imposible (469 x 151,7 mm): muestra
+    error claro normal y espejo, sin archivos erróneos de 17 hojas.
+11. No se produjeron errores de JavaScript en las exportaciones positivas.
+12. ZIP CRC verificado y todos los recursos anteriores conservados.
+
+LÍMITES PENDIENTES
+- El proyecto EXACTO del usuario que dio 14 hojas no se adjuntó en este
+  turno. La corrección sí se probó con un proyecto que reproduce 14 hojas.
+- La impresión física y el diálogo nativo de Windows no se pueden probar
+  desde este navegador de pruebas. Antes de cortar: imprimir al 100 % y
+  medir en papel la regla de 100 mm.
+- La calibración geométrica es provisional y corresponde exclusivamente
+  a las fotografías de Lola VIP de referencia. No se afirma que la
+  escala real haya sido validada físicamente por esta prueba.
+
+INSTALACIÓN
+- Descomprime V1.4.5 COMPLETA en una CARPETA NUEVA (NO sobrescribas V1.4.4).
+- Ejecuta INICIAR_RC_Bodywork.bat de la carpeta nueva.
+- Verifica V1.4.5 en el encabezado. Abre tu archivo .rcbody y exporta.
+- Se mantienen las versiones de resguardo V1.4.2, V1.4.3 y V1.4.4.

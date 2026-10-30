@@ -1,0 +1,478 @@
+{
+  "version": "1.11.0",
+  "baseVersion": "1.10.0",
+  "originalV148FilesUnchanged": 187,
+  "previousV1100Unchanged": true,
+  "browser": "154.0.8037.57",
+  "calibration": "Exact delivered Lola VIP reference photographs; same dimensions alone do not establish scale.",
+  "precision": {
+    "cases": [
+      {
+        "view": "side",
+        "kind": "logo",
+        "variant": "logo_12",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "side",
+        "kind": "vector",
+        "variant": "vec_aero",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "side",
+        "kind": "text",
+        "variant": "logo_racing",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "side",
+        "kind": "oldText",
+        "variant": "script",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.416666666666668,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "side",
+        "kind": "raster",
+        "variant": "foto_01_tramo_1",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "side",
+        "kind": "kit",
+        "variant": "flow_wave_04__nose_curve",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "top",
+        "kind": "logo",
+        "variant": "logo_12",
+        "requestedWidth": 85,
+        "measuredWidth": 84.91666666666667,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "top",
+        "kind": "vector",
+        "variant": "vec_blade_L",
+        "requestedWidth": 85,
+        "measuredWidth": 84.83333333333333,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.583333333333332,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "top",
+        "kind": "text",
+        "variant": "logo_racing",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.583333333333332,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "top",
+        "kind": "oldText",
+        "variant": "script",
+        "requestedWidth": 85,
+        "measuredWidth": 84.91666666666667,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "top",
+        "kind": "raster",
+        "variant": "sup47_02_outerR",
+        "requestedWidth": 85,
+        "measuredWidth": 84.91666666666667,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.583333333333332,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      }
+    ],
+    "actualVisiblePrint": {
+      "width": 100,
+      "height": 27.333333333333332
+    },
+    "guidesDoNotChangePDF": true,
+    "pointerSnapCentreMM": 225,
+    "cropAndUndo": true,
+    "groupPositionAndAlignment": true,
+    "groupLockRespected": true,
+    "projectRoundtrip": true,
+    "stickerFormat2Roundtrip": true,
+    "recoveryRoundtrip": true,
+    "invalidChangesAtomic": true,
+    "unknownPhotoNotCalibrated": true,
+    "responsive": [
+      {
+        "width": 1550,
+        "height": 1000,
+        "exitVisible": true
+      },
+      {
+        "width": 1024,
+        "height": 768,
+        "exitVisible": true
+      },
+      {
+        "width": 800,
+        "height": 768,
+        "exitVisible": true
+      },
+      {
+        "width": 720,
+        "height": 900,
+        "exitVisible": true
+      }
+    ],
+    "errors": []
+  },
+  "precisionPdf": {
+    "measurements": [
+      {
+        "view": "side",
+        "id": 600,
+        "expected": [
+          85,
+          21.5,
+          100,
+          55
+        ],
+        "actual": {
+          "width": 85,
+          "height": 21.5,
+          "x": 99.99999999999994,
+          "y": 54.99999999999997,
+          "box": {
+            "left": 89.20833333333327,
+            "right": 110.7916666666666,
+            "top": 12.458333333333307,
+            "bottom": 97.54166666666663
+          }
+        }
+      },
+      {
+        "view": "side",
+        "id": 601,
+        "expected": [
+          100,
+          30,
+          330,
+          85
+        ],
+        "actual": {
+          "width": 100,
+          "height": 30,
+          "x": 329.99999999999994,
+          "y": 85,
+          "box": {
+            "left": 283.99999999999994,
+            "right": 375.99999999999994,
+            "top": 54.125,
+            "bottom": 115.875
+          }
+        }
+      },
+      {
+        "view": "top",
+        "id": 610,
+        "expected": [
+          70,
+          25,
+          90,
+          70
+        ],
+        "actual": {
+          "width": 69.91666666666666,
+          "height": 25,
+          "x": 90.00000000000003,
+          "y": 70.00000000000001,
+          "box": {
+            "left": 77.45833333333336,
+            "right": 102.54166666666669,
+            "top": 35.08333333333335,
+            "bottom": 104.91666666666669
+          }
+        }
+      },
+      {
+        "view": "top",
+        "id": 611,
+        "expected": [
+          80,
+          22,
+          140,
+          200
+        ],
+        "actual": {
+          "width": 80,
+          "height": 22,
+          "x": 140,
+          "y": 200,
+          "box": {
+            "left": 104.79166666666669,
+            "right": 175.20833333333334,
+            "top": 170.29166666666666,
+            "bottom": 229.70833333333334
+          }
+        }
+      }
+    ],
+    "compositeActual": {
+      "width": 286.75,
+      "height": 103.5
+    },
+    "compositeExpectedUnion": {
+      "left": 89.20833333333327,
+      "right": 375.99999999999994,
+      "top": 12.458333333333307,
+      "bottom": 115.875
+    },
+    "exports": [
+      {
+        "scope": "visible",
+        "mirror": false,
+        "pages": 1,
+        "inkPixelsPreserved": true,
+        "allElementsIncluded": true
+      },
+      {
+        "scope": "visible",
+        "mirror": true,
+        "pages": 1,
+        "inkPixelsPreserved": true,
+        "allElementsIncluded": true
+      },
+      {
+        "scope": "complete",
+        "mirror": false,
+        "pages": 1,
+        "inkPixelsPreserved": true,
+        "allElementsIncluded": true
+      },
+      {
+        "scope": "complete",
+        "mirror": true,
+        "pages": 1,
+        "inkPixelsPreserved": true,
+        "allElementsIncluded": true
+      }
+    ],
+    "guidesPDFByteIdentical": true,
+    "errors": []
+  },
+  "exit": {
+    "pendingMMCommittedBeforeExit": true,
+    "recoveryWrittenBeforeClose": true,
+    "browserCloseBlockedFallback": true,
+    "cancelDuringSaveStopsClose": true,
+    "escapeDuringSaveStopsClose": true,
+    "quotaFailureKeepsDesignOpen": true,
+    "externalSaveCancellationKeepsOpen": true,
+    "externalBackupEnablesClose": true,
+    "scriptOpenedWindowCloses": true,
+    "errors": []
+  },
+  "pendingEdits": {
+    "nativeFileSaveWaits": true,
+    "downloadSaveWaits": true,
+    "stickerSaveWaits": true,
+    "duplicateWaits": true,
+    "selectionChangeWaits": true,
+    "pdfWaits": true,
+    "errors": []
+  },
+  "pendingTransitions": {
+    "openProjectCheckpointsLatestMM": true,
+    "recoverCheckpointsLatestMM": true,
+    "replacePhotoCheckpointsLatestMM": true,
+    "newDesignCheckpointsLatestMM": true,
+    "errors": []
+  },
+  "recoveryRegression": {
+    "browserRestartRecovered": true,
+    "automaticAfterEditing": true,
+    "undoLimit": 300,
+    "recoveredUndo": 60,
+    "quotaFailurePreservesPrior": true,
+    "photosDeduplicated": true,
+    "separateTabDrafts": true,
+    "badImageImportAtomic": true,
+    "photoReplacementCheckpoint": true,
+    "concurrentLoadBlocked": true,
+    "sameDesignReopenCheckpoint": true,
+    "retainedVersionsPerDesign": 20,
+    "retainedDesigns": 10,
+    "allSnapshotsHydrate": true,
+    "storageDisabledManualDownloadWorks": true,
+    "errors": []
+  },
+  "oldPdfByteIdentical": 32,
+  "oldPdfLayoutCounts": {
+    "1": [
+      {
+        "scope": "visible",
+        "mirror": false,
+        "previousPages": 5,
+        "pages": 2
+      },
+      {
+        "scope": "visible",
+        "mirror": true,
+        "previousPages": 5,
+        "pages": 2
+      },
+      {
+        "scope": "complete",
+        "mirror": false,
+        "previousPages": 6,
+        "pages": 4
+      },
+      {
+        "scope": "complete",
+        "mirror": true,
+        "previousPages": 6,
+        "pages": 4
+      }
+    ],
+    "2": [
+      {
+        "scope": "visible",
+        "mirror": false,
+        "previousPages": 6,
+        "pages": 3
+      },
+      {
+        "scope": "visible",
+        "mirror": true,
+        "previousPages": 6,
+        "pages": 3
+      },
+      {
+        "scope": "complete",
+        "mirror": false,
+        "previousPages": 6,
+        "pages": 3
+      },
+      {
+        "scope": "complete",
+        "mirror": true,
+        "previousPages": 6,
+        "pages": 3
+      }
+    ],
+    "3": [
+      {
+        "scope": "visible",
+        "mirror": false,
+        "previousPages": 5,
+        "pages": 1
+      },
+      {
+        "scope": "visible",
+        "mirror": true,
+        "previousPages": 5,
+        "pages": 1
+      },
+      {
+        "scope": "complete",
+        "mirror": false,
+        "previousPages": 5,
+        "pages": 1
+      },
+      {
+        "scope": "complete",
+        "mirror": true,
+        "previousPages": 5,
+        "pages": 1
+      }
+    ],
+    "4": [
+      {
+        "scope": "visible",
+        "mirror": false,
+        "previousPages": 3,
+        "pages": 2
+      },
+      {
+        "scope": "visible",
+        "mirror": true,
+        "previousPages": 3,
+        "pages": 2
+      },
+      {
+        "scope": "complete",
+        "mirror": false,
+        "previousPages": 3,
+        "pages": 2
+      },
+      {
+        "scope": "complete",
+        "mirror": true,
+        "previousPages": 3,
+        "pages": 2
+      }
+    ]
+  },
+  "pngViewsIdenticalToV1100": 8,
+  "svgConversionsChecked": 27,
+  "newTextExtentsChecked": 18,
+  "errors": [],
+  "limits": [
+    "Software validation in Chromium/Linux, not physical printing.",
+    "File protocol and native Windows/Edge selector/close policies still need verification on the user machine.",
+    "Old designs keep their geometry until explicitly dimensioned. New rotations use calibrated physical coordinates.",
+    "Browser-local recovery requires an external rcbody backup too."
+  ]
+}

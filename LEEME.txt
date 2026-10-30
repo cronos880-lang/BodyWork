@@ -1,0 +1,103 @@
+RC BODYWORK V1.12.0 — CALIBRACION Y PLANTILLAS DE OTRAS CARROCERIAS
+
+INSTALACION
+Extrae COMPLETO en una carpeta nueva. Ejecuta INICIAR_RC_Bodywork.bat con
+Chrome o Edge actual. Conserva juntos HTML, módulos rc-*.js, assets y fuentes.
+Funciona sin conexión. Mantén tus originales y las versiones anteriores.
+SOLO_CAMBIOS se aplica SOBRE UNA COPIA DE V1.11.0, conservando las rutas.
+Se recomienda COMPLETO. Los informes anteriores incluidos son históricos.
+
+CALIBRAR OTRA CARROCERIA
+Abre Calibración y plantillas, encima de las fotografías.
+1. Elige Lateral o Superior e importa su foto. Repite para cada vista que uses.
+   Utiliza una foto recta, con la cámara perpendicular a la vista y desde lejos.
+   Los ejes deben quedar horizontales/verticales. Un fondo uniforme facilita la
+   detección de silueta. El programa limita las fotos a 1400 px por lado.
+2. Arrastra un rectángulo entre referencias conocidas. Indica cuánto miden sus
+   lados en la realidad: horizontal X y vertical Y, en mm. Puedes usar coma o
+   punto. En una superior suelen ser ancho y largo; en un lateral, largo y alto.
+   Ajustar límites permite afinar sus extremos en píxeles. La referencia puede
+   abarcar la carrocería o una zona rectangular medida en el mismo plano.
+3. Pulsa Aplicar calibración a esta vista. Cambia la escala de toda esa foto,
+   incluidas las pegatinas que tenga. Puedes deshacer con Atrás. Cerrar el
+   asistente sin aplicar no cambia la calibración; importar una foto sí cambia
+   esa vista. La referencia no recorta la imagen ni las pegatinas que quedan fuera.
+
+Las medidas X/Y parten de la esquina superior izquierda de la referencia.
+Guías y alineación usan ese marco. Los controles en mm y los PDF utilizan los
+mismos factores de escala independientes para X/Y. Se mantienen el tamaño físico
+al girar una pieza dimensionada y los controles anteriores de porcentaje.
+Límites: marco mínimo 10 px por eje y medidas reales de 10 a 1200 mm. La memoria
+puede restringir una escala concreta: no se reduce el dibujo silenciosamente.
+
+COMPROBAR ANTES DE USAR ADHESIVO
+Descargar hoja de prueba A4 genera dos reglas de 100 mm y un rectángulo de
+100 x 50 mm. Imprime en A4 apaisado al 100 %, sin ajustar ni reducir. Mide entre
+los centros de las líneas. Esto comprueba la configuración de la impresora.
+Después exporta una pegatina en PDF normal sobre papel y prueba su tamaño y
+ajuste en la carrocería real. Esto comprueba tu calibración y la geometría.
+Solo entonces marca Ya he comprobado... y vuelve a Aplicar para guardar esa
+anotación. Es una comprobación tuya: el programa no puede realizarla físicamente.
+Cambiar medidas o referencia desmarca la comprobación hasta que la repitas.
+
+La calibración es una escala plana: NO corrige perspectiva, distorsión de lente
+ni desarrolla superficies curvas en 3D. Una distancia tomada en otro plano de
+la foto puede no tener la misma escala. No garantiza por sí sola el encaje sobre
+una carrocería curva. No hay impresión física verificada de otra carrocería.
+
+GUARDAR Y CARGAR PLANTILLAS
+Guardar plantilla crea un .rctemplate con las fotos y su calibración YA APLICADA.
+No incluye pegatinas, grupos, pintura elegida ni historial del diseño. Aplica
+primero los cambios del asistente; solo se guardan los que hayas aplicado.
+Todas las fotos incluidas deben estar calibradas. Puedes preparar una sola vista.
+Cargar plantilla abre un diseño nuevo con esas fotos/medidas. El trabajo anterior
+se conserva primero en recuperación si está disponible; guarda también .rcbody.
+Al importar otra fotografía se elimina la calibración de esa vista. El historial
+de deshacer se reinicia para no aplicar geometrías o escalas de la foto anterior;
+puedes recuperar su estado completo desde Versiones y recuperación.
+
+PROYECTOS Y PEGATINAS
+Guardar proyecto .rcbody conserva el diseño completo y sus calibraciones.
+La escala también se guarda en recuperación y al deshacer. Los archivos nuevos
+requieren V1.12.0; esta versión sigue leyendo los proyectos anteriores.
+Las fotos Lola VIP de referencia se reconocen automáticamente como antes;
+coincidir solamente en el tamaño en píxeles no habilita una escala desconocida.
+La impresión requiere calibrar las vistas que tengan capas visibles.
+
+Guardar pegatina conserva la creación sin sus fotos. Las creaciones de plantillas
+manuales usan .rcsticker formato 3, con su referencia de escala. Cárgalas en la
+misma plantilla para conservar tamaño y posiciones relativas. Se rechaza una
+plantilla distinta aunque tenga los mismos píxeles. Las versiones anteriores
+rechazan el formato 3 para evitar importarlo con medidas incorrectas. Siguen
+funcionando los formatos 1 y 2 anteriores; el formato 2 conserva la referencia
+Lola VIP para la que se creó. No se convierte automáticamente entre carrocerías.
+
+FUNCIONES CONSERVADAS
+- Medidas de ancho/alto del dibujo completo, centro X/Y, proporción, alineación,
+  guías y ajuste al arrastrar. Selecciona una capa y abre Medidas y alineación · mm.
+- PDF normal/espejo sin pérdidas a 304,8 ppp, recorte visible o piezas completas,
+  vista previa, limpieza opcional y ahorro de papel por forma, con separación
+  de 2 mm y solapes de 20 mm. Las guías no se imprimen. El PDF usa 12 px/mm.
+- Se mantiene el ahorro visible de las cuatro pruebas Lola: 5->2, 6->3, 5->1,
+  3->2 hojas, normal y espejo. La búsqueda no garantiza el mínimo para todo diseño.
+- Autoguardado local, recuperación, hasta 20 versiones por diseño y 10 diseños;
+  hasta 300 cambios deshechos y 60 recuperados, sujetos a memoria disponible.
+  La copia local depende de navegador y perfil: guarda también archivos externos.
+- 36 diseños SVG limpios, conversión de las 27 piezas que ya tenían trazados,
+  textos y estilos de logo con tipografías incluidas, colores y recortes editables.
+- Capas, orden, visibilidad/bloqueo por fila, grupos, duplicación y .rcsticker.
+- Salir: guarda recuperación antes de intentar cerrar. Si el navegador bloquea
+  el cierre, permite cerrar manualmente, guardar .rcbody o volver al diseño.
+No se incorporan los acabados visuales V1.9.0 descartados ni se reponen los
+botones de exportación PNG retirados. La función interna PNG se conserva.
+
+PRUEBAS E INFORME
+Lee INFORME_V1_12_0.md y PRUEBAS_V1_12_0.json. Comprobado en Chromium/Linux:
+32 PDF antiguos idénticos byte a byte, 8 vistas PNG iguales, dos fotos sintéticas
+con calibración independiente, cuatro PDF nuevos, plantillas, guardado,
+recuperación, deshacer, milímetros, textos, SVG, Salir y errores de archivo.
+Las fotos sintéticas son pruebas de software, no plantillas reales validadas.
+Los originales V1.4.8 y V1.11.0 se han conservado intactos. Los proyectos y PDF
+personales de prueba no están incluidos en la entrega del programa.
+Windows/Edge real, file:// y el ajuste sobre tu carrocería necesitan comprobación
+en tu equipo. El BAT original se mantiene sin modificaciones.

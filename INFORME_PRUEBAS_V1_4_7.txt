@@ -1,0 +1,49 @@
+RC BODYWORK V1.4.7 - INFORME DE PRUEBAS (28/10/2026)
+
+INCIDENCIA INVESTIGADA:
+Proyecto NUEVO de usuario (distinto de Lola de prueba) con sup47_03_outerL
+221.3 x 178.8 mm. La V1.4.6 daba error por su tope artificial de
+168 mm de altura para elementos superiores, aunque las dimensiones caben
+fisicamente en A4 horizontal (297 x 210 mm).
+
+CORRECCION GENERAL:
+- Los proyectos que no son el patron de prueba usan un distribuidor
+  de pegatinas superiores basado en el espacio A4 disponible.
+- Superficie fisica util por hoja superior 283 x 196 mm, dejando 7 mm
+  por lado y sin reducir ni cortar el arte.
+- Composicion por capas geometricas, en un maximo de tres hojas
+  superiores; las piezas se mantienen completas y se pueden reorientar
+  90 grados cuando resulta imprescindible para caber en A4.
+- No se imprimen titulos grandes ni reglas sobre el dibujo en las hojas
+  superiores; la regla de 100 mm permanece en la hoja de instrucciones.
+- Si por dimensiones o cantidad realmente no caben en tres hojas,
+  el programa avisa expresamente, sin crear fragmentos ni archivos erroneos.
+- No se ha alterado el exportador de laterales ni el diseno de ejemplo.
+- Encabezado y proyectos nuevos identificados V1.4.7. Se conserva
+  compatibilidad de apertura V1.4.6 y anteriores.
+
+PRUEBAS AUTOMATIZADAS CON CHROMIUM/PLAYWRIGHT:
+1. Plantilla sintetica de 4 pegatinas superiores, dos de
+   221.3x178.8 y 218.4x176.2 mm, y dos de menor tamano:
+   PDF normal 8 hojas, PDF espejo 8 hojas; sin errores JS.
+2. Inspeccion de las hojas exportadas: las piezas grandes aparecen enteras,
+   separadas y sin reducir; colores visibles y sin superponer textos.
+3. Proyecto Lola original: normal 8 paginas, espejo 8 paginas,
+   ambos PDF byte a byte identicos a V1.4.6.
+4. Proyecto de regresion con varias pegatinas laterales que antes
+generaba 14 paginas: 8 normal + 8 espejo, sin errores.
+5. Proyecto de lateral alto ~189 mm guardado en V1.4.6:
+   reabierto por V1.4.7 y PDF 8 normal + 8 espejo.
+6. Integridad del ZIP completo: CRC verificado; los archivos originales
+   de la version anterior no cambian salvo RC_Bodywork.html y LEEME.txt.
+
+LIMITACIONES IMPORTANTES:
+- El proyecto NUEVO exacto del usuario con la foto azul/negra NO se ha
+  aportado como .rcbody. Solo se dispone de capturas y dimensiones del error.
+- La plantilla 221.3x178.8 es geometrica de prueba y NO reconstruye la
+  pegatina original del usuario: la comprobacion del nuevo archivo exacto
+  quedara pendiente hasta que lo abra y exporte.
+- La calibracion de escala sigue siendo la de las fotografias de referencia
+  de Lola (878x768 superior y 1167x768 lateral). Nuevas fotos o formas de
+  carroceria necesitan calibracion fisica independiente.
+- No se ha realizado impresion fisica ni prueba del selector nativo Windows.

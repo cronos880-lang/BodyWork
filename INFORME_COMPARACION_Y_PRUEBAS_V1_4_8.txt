@@ -1,0 +1,56 @@
+RC BODYWORK V1.4.8 - INFORME DE COMPARACION Y PRUEBAS
+Fecha: 28/10/2026
+
+DOCUMENTOS EXAMINADOS (ENTREGADOS POR EL USUARIO):
+- Lola_VIP_Edu_Pegatinas_INTERIOR_ESPEJO.pdf: 7 hojas (1 instrucciones + 2 superior + 4 lateral).
+- Lola_VIP_Ivan_Pegatinas_INTERIOR_ESPEJO.pdf: 8 hojas (1 instrucciones + 3 superior + 4 lateral).
+
+HALLAZGOS:
+- En Edu, hoja 2, los fragmentos superiores están dispersos, con elementos en la parte alta y baja de la hoja.
+- En Edu, hoja 3, distintas franjas superiores se agrupan sin la separación clara de Iván.
+- En Edu, hojas 4-7, aparecen polígonos adicionales cian y azul separados del dibujo principal.
+- Iván tiene dos franjas superiores independientes, centro y logo en la tercera superior,
+  y cuatro hojas laterales con correspondencia de espejo.
+- El editor ya limita el dibujo a la silueta de la carrocería (stickerCanvas usa bodyCanvas),
+  pero el PDF V1.4.7 exportaba objetos sin usar esa misma máscara: discrepancia funcional.
+
+CAMBIOS V1.4.8:
+1. Se elimina completamente la primera hoja de instrucciones de los PDF normal y espejo.
+2. Los diseños nuevos se recortan únicamente a la silueta REAL visible en el editor
+   (no se imprimen colores/fragmentos situados fuera de la carrocería).
+3. Las franjas exteriores superiores se preparan por separado, cada una en su hoja.
+   Los elementos interiores menores solo se agrupan cuando caben sin solapamientos.
+4. El lateral se compone desde las pegatinas sobre la misma máscara visible que usa el editor,
+   conservando posición, orden de las capas y orientación en espejo.
+5. Para las hojas superiores nuevas se añade regla de 100 mm donde existe papel libre.
+6. Se conserva el tratamiento de Iván que ya funcionaba, excepto la eliminación de instrucciones.
+7. El archivo nuevo se identifica como V1.4.8 y abre proyectos V1.4.7 y anteriores.
+
+PRUEBAS AUTOMATIZADAS EN CHROMIUM/PLAYWRIGHT:
+- Proyecto Iván: normal 7 hojas, espejo 7; ninguna incidencia JavaScript.
+- Las 7 imágenes JPG internas coinciden byte a byte con las 7 hojas de pegatinas
+  que generaba V1.4.7 (sin contar la hoja de instrucciones eliminada).
+- Diseño de prueba con sup47_03_outerL, innerL, innerR y outerR, dos capas laterales:
+  PDF normal y espejo, 7 hojas cada uno, sin errores.
+- Guardado y reapertura del proyecto sintético V1.4.8: PDF espejo idéntico byte a byte.
+- Regresión antiguo problema 14 hojas: normal 7 y espejo 7, sin errores.
+- Regresión lateral alto: normal 7 y espejo 7, sin errores.
+- Se mantiene la geometría PDF A4 horizontal de 297 x 210 mm, sin escalar el dibujo
+  para adaptarlo al papel (impresión recomendada al 100 %).
+
+LIMITACIONES / PENDIENTES:
+- NO tenemos el proyecto RCBody (.rcbody) exacto de Edu, solo su PDF:
+  no se puede certificar el resultado exacto del diseño Edu, ni reconstruir
+  con exactitud posición, recortes, tamaños y capas a partir del PDF aplanado.
+- Ejemplo sintético NO representa el diseño Edu real.
+- No se ha verificado impresión con impresora física, calibración real ni
+  el diálogo nativo Guardar como de Windows.
+- La máscara de carrocería elimina deliberadamente partes fuera de su silueta,
+  para reproducir lo visible en el editor; revisar si se desea un margen de corte.
+
+INSTALACION:
+1. Extraer el ZIP completo en una carpeta NUEVA.
+2. Ejecutar INICIAR_RC_Bodywork.bat y verificar V1.4.8 en el encabezado.
+3. Abrir el proyecto Edu guardado (.rcbody) y exportar PDF normal y en espejo.
+4. Imprimir al 100 %, NO ajustar a página.
+5. Para certificar el diseño exacto Edu, aportar el proyecto Edu actualizado.

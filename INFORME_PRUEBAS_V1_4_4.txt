@@ -1,0 +1,54 @@
+INFORME DE PRUEBAS - RC BODYWORK V1.4.4
+======================================
+28/10/2026 (versión correctiva tras V1.4.3)
+
+ERRORES LOCALIZADOS
+1. Se entregó la V1.4.3 con V1.4.2 en el título del navegador y en el
+   encabezado. El error de identificación existía dentro del HTML.
+2. La exportación de piezas vectoriales aplicaba un recorte contra el área
+   calibrada de la fotografía. Con roof_prisms en el lateral a y=0.95,
+   tamaño 100%, la salida original no tenía píxeles visibles. También se
+   truncaban piezas al pasar por los bordes del rectángulo calibrado.
+
+CORRECCIONES
+- Título y encabezado visibles V1.4.4; proyecto grabado 1.4.4-rc-bodywork.
+- Reapertura compatible con proyectos de la V1.4.3 y versiones anteriores.
+- Piezas vectoriales afectadas por límites de calibración: se reconstruye
+  la pieza completa sin perder escala física ni recortes internos.
+- Si una pegatina es más grande que la zona imprimible, se distribuye a
+  escala 1:1 en hojas A4, con pasos de 215x120 mm y solapes de 20 mm.
+- Se conserva el pie de impresión exclusivamente en la primera hoja;
+  la regla de 100 mm permanece en todas las páginas.
+
+PRUEBAS EJECUTADAS CON CHROMIUM + PLAYWRIGHT
+- Proyecto Lola_VIP_Ivan: PDF normal e interior, ocho hojas A4 cada uno.
+- Los PDF Lola normal e interior son IGUALES BYTE A BYTE a la V1.4.3.
+- Piezas roof_prisms (tamaño 30%) situadas junto a los bordes de las
+  dos fotografías: PDF normal e interior, cuatro páginas cada uno.
+- Piezas roof_prisms (tamaño 100%) situadas junto a los bordes: PDF
+  normal e interior, 17 páginas cada uno con distribución por hojas.
+- No hay errores JavaScript ni errores de exportación en dichos casos.
+- Guardar, reabrir y exportar el proyecto: PDF normal idéntico a original.
+- PNG superior y lateral: 878x768 y 1167x768, respectivamente.
+- Simulación de diálogo de guardado directo y recuperación por descarga
+  alternativa si falla la escritura: ambas rutas correctas.
+- Restauración automática de imágenes raster/logo, incluso tras invalidar
+  su caché; las exportaciones resultan idénticas al original.
+- Si falta el recurso, el programa avisa explícitamente.
+- Archivo comprimido: CRC correcto. El resto de recursos y proyectos
+  originales son idénticos byte a byte a V1.4.3.
+
+LIMITACIONES DE LAS PRUEBAS
+- En este entorno no se permite abrir file:/// ni 127.0.0.1 en Chromium
+  por una restricción de navegación. Se ensayó ejecutando el HTML con
+  page.set_content, sin publicar ni modificar recursos externos.
+- No se ensayó el diálogo nativo de Windows/Chrome/Edge ni la impresora
+  física; solo sus flujos de escritura simulados.
+- La regla impresa en papel todavía debe medirse físicamente (100 mm).
+
+INSTRUCCIONES
+1. Descomprime el ZIP completo en una CARPETA NUEVA, distinta de V1.4.2
+   y V1.4.3. No sobrescribas ninguna de las anteriores.
+2. Abre el INICIAR_RC_Bodywork.bat DE ESA NUEVA CARPETA.
+3. Confirma V1.4.4 en el encabezado y la pestaña del navegador.
+4. Abre tu proyecto .rcbody y repite la exportación.

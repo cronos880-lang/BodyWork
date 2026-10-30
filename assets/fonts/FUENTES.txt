@@ -1,0 +1,9 @@
+Fuentes TTF originales incluidas sin modificar:
+RacingSansOne-Regular.ttf — Racing Sans One — SIL OFL 1.1
+https://github.com/google/fonts/tree/main/ofl/racingsansone
+RussoOne-Regular.ttf — Russo One — SIL OFL 1.1
+https://github.com/google/fonts/tree/main/ofl/russoone
+Yellowtail-Regular.ttf — Yellowtail — Apache 2.0
+https://github.com/google/fonts/tree/main/apache/yellowtail
+Las licencias originales acompañan a los archivos. Se preservan los nombres y metadatos de las fuentes.
+El programa usa alias CSS internos y carga sus datos originales desde rc-text.js para funcionar offline.

@@ -1,0 +1,65 @@
+RC BODYWORK V1.4.6 - CORRECCIÓN DE LATERALES DE 189 MM
+=======================================================
+28/10/2026
+
+INCIDENCIA DE USUARIO
+- La V1.4.5 avisa: "El dibujo lateral completo mide 424.0 x 189.2 mm,
+  y no cabe en las 2 hojas previstas para el lateral (máx. 450 x 124 mm)".
+- La V1.4.5 usaba indebidamente la altura nominal de la carrocería (124 mm)
+  como límite de impresión del A4, cuya dimensión vertical real es 210 mm.
+- El archivo .rcbody del usuario correspondiente a los 424.0 x 189.2 mm
+  NO se ha aportado, solo se dispone de la captura del mensaje de error.
+
+CAMBIOS
+- En composiciones laterales con varias capas, se admiten hasta 450 x 196 mm
+  reales en las dos hojas A4 de cada lateral, manteniendo 20 mm de solape.
+- Para laterales de más de 145 mm de alto, hoja de A4 horizontal compacta:
+  imagen entre y=7 y y=203 mm, título al margen izquierdo, regla de 100 mm
+  al margen derecho (vertical), sin interferencias con las pegatinas.
+- Se mantiene 1:1, NO se reescala el dibujo, NO se recortan elementos y
+  NO se generan páginas adicionales para fragmentos de otro color.
+- Si el contenido de la composición supera el área que se puede imprimir
+  realmente en 2 A4 a escala 1:1, da un error claro en vez de hacer un PDF
+  roto o silenciosamente incompleto.
+- Validación adicional del bounding box del resultado para evitar recortes
+  por redondeos cerca de los bordes.
+- V1.4.6 visible en la ventana y en la pestaña del navegador; guardado y
+  lectura de proyectos 1.4.6 y versiones anteriores.
+
+PRUEBAS REALIZADAS CON CHROMIUM REAL (Playwright)
+1. Proyecto Lola VIP original: 8 páginas normal y 8 espejo, PDFs EXACTAMENTE
+   IGUALES BYTE A BYTE a los de la V1.4.5 (SHA-256 comprobado).
+2. Proyecto regresión que dio 14 páginas en V1.4.4, corregido en V1.4.5:
+   8 páginas normal y 8 espejo.
+3. Proyecto sintético con lateral de 428.8 x 189.0 mm (aproxima incidente
+   424.0 x 189.2 mm): 8 páginas normal y 8 espejo sin errores JavaScript.
+4. Proyecto sintético con ese mismo lateral alto más 3 capas de colores:
+   8 páginas normal y 8 espejo, con todas las capas en su lugar.
+5. Solapes de 20 mm comparados por píxeles entre hojas: diferencia media
+   de 0.25 sobre 255 (causada por la compresión JPEG del PDF).
+6. Comparación por píxeles entre lado A y B reflejado: diferencias medias
+   menores de 0.18 sobre 255 (equivalentes visualmente).
+7. Guardar y reabrir un proyecto con varias capas y lateral alto:
+   PDF normal y espejo IDÉNTICOS BYTE A BYTE a antes del guardado.
+8. Medida A4 horizontal de todas las hojas confirmada en PDFs renderizados.
+9. Regla vertical de 100 mm y ausencia de interferencias comprobadas
+   visualmente en el contacto de las ocho páginas.
+10. Casos con composiciones mayores que 196 mm: rechazados con mensaje de
+    dimensiones, sin intentar reducir escala ni añadir páginas.
+11. Título y encabezado V1.4.6 visibles y comprobados en navegador.
+12. ZIP completo verificado con CRC y archivos de versiones anteriores intactos.
+
+LÍMITES
+- NO se ha probado el .rcbody EXACTO del usuario que genera 424 x 189,2 mm.
+  El archivo de regresión de 428,8 x 189,0 mm es una simulación equivalente.
+- Una decoración de 189,2 mm de altura puede imprimirse a 1:1 en A4, pero
+  supera la altura referencial de la carrocería (124 mm): comprobar encaje
+  físico antes de pegar.
+- No se ha realizado impresión física ni verificación del diálogo nativo
+  de guardado de Windows; para imprimir elegir "Tamaño real 100%".
+
+INSTALACIÓN
+- Descomprimir ZIP V1.4.6 completo en carpeta NUEVA, NO sobreescribir 1.4.5.
+- Ejecutar INICIAR_RC_Bodywork.bat, verificar que el encabezado pone V1.4.6.
+- Abrir el proyecto .rcbody actual y exportar PDF normal / interior espejo.
+- Si persiste un error, aportar el .rcbody EXACTO para reproducirlo.

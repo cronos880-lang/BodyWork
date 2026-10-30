@@ -1,0 +1,490 @@
+{
+  "version": "1.12.0",
+  "baseVersion": "1.11.0",
+  "originalV148FilesUnchanged": 187,
+  "previousV1110Unchanged": true,
+  "browser": "154.0.8037.57",
+  "calibration": {
+    "side": {
+      "reference": {
+        "x0": 200,
+        "x1": 800,
+        "y0": 200,
+        "y1": 400
+      },
+      "mm": [
+        300,
+        80
+      ],
+      "pixels": [
+        1000,
+        600
+      ],
+      "manual": true
+    },
+    "top": {
+      "reference": {
+        "x0": 100,
+        "x1": 700,
+        "y0": 100,
+        "y1": 900
+      },
+      "mm": [
+        200,
+        400
+      ],
+      "pixels": [
+        800,
+        1000
+      ],
+      "manual": true
+    },
+    "measurements": [
+      {
+        "view": "side",
+        "size": [
+          85,
+          21.416666666666668
+        ],
+        "quarterTurn": true
+      },
+      {
+        "view": "top",
+        "size": [
+          84.91666666666667,
+          21.583333333333336
+        ],
+        "quarterTurn": true
+      }
+    ],
+    "referenceDoesNotCropArt": {
+      "width": 40,
+      "height": 15
+    },
+    "calibrationUndoAndCache": true,
+    "proofSheet": {
+      "A4mm": [
+        297,
+        210
+      ],
+      "rulersMM": [
+        100,
+        100
+      ],
+      "rectangleMM": [
+        100,
+        50
+      ]
+    },
+    "projectAndCreationRoundtrip": true,
+    "mismatchedReferenceRejected": true,
+    "exports": [
+      {
+        "scope": "visible",
+        "mirror": false,
+        "pages": 1,
+        "allElements": true,
+        "exactPixels": true
+      },
+      {
+        "scope": "visible",
+        "mirror": true,
+        "pages": 1,
+        "allElements": true,
+        "exactPixels": true
+      },
+      {
+        "scope": "complete",
+        "mirror": false,
+        "pages": 1,
+        "allElements": true,
+        "exactPixels": true
+      },
+      {
+        "scope": "complete",
+        "mirror": true,
+        "pages": 1,
+        "allElements": true,
+        "exactPixels": true
+      }
+    ],
+    "guidesPDFIdentical": true,
+    "recoveryRoundtrip": true,
+    "recoveredCalibrationUndo": true,
+    "templateRoundtrip": true,
+    "badImportsAtomic": true,
+    "responsive": [
+      [
+        1550,
+        1000
+      ],
+      [
+        1024,
+        768
+      ],
+      [
+        800,
+        768
+      ],
+      [
+        720,
+        900
+      ]
+    ],
+    "errors": [],
+    "expectedRejections": []
+  },
+  "calibrationGuards": {
+    "sameSizeUnknownPhotoCannotPrint": true,
+    "onlyViewsWithArtworkRequireCalibrationForPrint": true,
+    "invalidDraftEdgesAtomic": true,
+    "cancelTemplateSaveNoMutation": true,
+    "allTemplatePhotosMustBeCalibrated": true,
+    "failedNativeWriteAborted": true,
+    "deniedSelectorDownloadFallback": true,
+    "replacementClearsCalibrationAndIncompatibleUndo": true,
+    "errors": [],
+    "expectedAlerts": []
+  },
+  "precisionRegression": {
+    "cases": [
+      {
+        "view": "side",
+        "kind": "logo",
+        "variant": "logo_12",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "side",
+        "kind": "vector",
+        "variant": "vec_aero",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "side",
+        "kind": "text",
+        "variant": "logo_racing",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "side",
+        "kind": "oldText",
+        "variant": "script",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.416666666666668,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "side",
+        "kind": "raster",
+        "variant": "foto_01_tramo_1",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "side",
+        "kind": "kit",
+        "variant": "flow_wave_04__nose_curve",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "top",
+        "kind": "logo",
+        "variant": "logo_12",
+        "requestedWidth": 85,
+        "measuredWidth": 84.91666666666667,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "top",
+        "kind": "vector",
+        "variant": "vec_blade_L",
+        "requestedWidth": 85,
+        "measuredWidth": 84.83333333333333,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.583333333333332,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "top",
+        "kind": "text",
+        "variant": "logo_racing",
+        "requestedWidth": 85,
+        "measuredWidth": 85,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.583333333333332,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "top",
+        "kind": "oldText",
+        "variant": "script",
+        "requestedWidth": 85,
+        "measuredWidth": 84.91666666666667,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.5,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      },
+      {
+        "view": "top",
+        "kind": "raster",
+        "variant": "sup47_02_outerR",
+        "requestedWidth": 85,
+        "measuredWidth": 84.91666666666667,
+        "requestedHeight": 21.5,
+        "measuredHeight": 21.583333333333332,
+        "rotation": 37,
+        "undo": true,
+        "centrePreserved": true
+      }
+    ],
+    "actualVisiblePrint": {
+      "width": 100,
+      "height": 27.333333333333332
+    },
+    "guidesDoNotChangePDF": true,
+    "pointerSnapCentreMM": 225,
+    "cropAndUndo": true,
+    "groupPositionAndAlignment": true,
+    "groupLockRespected": true,
+    "projectRoundtrip": true,
+    "stickerFormat2Roundtrip": true,
+    "recoveryRoundtrip": true,
+    "invalidChangesAtomic": true,
+    "unknownPhotoNotCalibrated": true,
+    "responsive": [
+      {
+        "width": 1550,
+        "height": 1000,
+        "exitVisible": true
+      },
+      {
+        "width": 1024,
+        "height": 768,
+        "exitVisible": true
+      },
+      {
+        "width": 800,
+        "height": 768,
+        "exitVisible": true
+      },
+      {
+        "width": 720,
+        "height": 900,
+        "exitVisible": true
+      }
+    ],
+    "errors": []
+  },
+  "exitRegression": {
+    "pendingMMCommittedBeforeExit": true,
+    "recoveryWrittenBeforeClose": true,
+    "browserCloseBlockedFallback": true,
+    "cancelDuringSaveStopsClose": true,
+    "escapeDuringSaveStopsClose": true,
+    "quotaFailureKeepsDesignOpen": true,
+    "externalSaveCancellationKeepsOpen": true,
+    "externalBackupEnablesClose": true,
+    "scriptOpenedWindowCloses": true,
+    "errors": []
+  },
+  "pendingTransitionsRegression": {
+    "openProjectCheckpointsLatestMM": true,
+    "recoverCheckpointsLatestMM": true,
+    "replacePhotoCheckpointsLatestMM": true,
+    "newDesignCheckpointsLatestMM": true,
+    "errors": []
+  },
+  "recoveryRegression": {
+    "browserRestartRecovered": true,
+    "automaticAfterEditing": true,
+    "undoLimit": 300,
+    "recoveredUndo": 60,
+    "quotaFailurePreservesPrior": true,
+    "photosDeduplicated": true,
+    "separateTabDrafts": true,
+    "badImageImportAtomic": true,
+    "photoReplacementCheckpoint": true,
+    "concurrentLoadBlocked": true,
+    "sameDesignReopenCheckpoint": true,
+    "retainedVersionsPerDesign": 20,
+    "retainedDesigns": 10,
+    "allSnapshotsHydrate": true,
+    "storageDisabledManualDownloadWorks": true,
+    "errors": []
+  },
+  "oldPdfByteIdentical": 32,
+  "cleanupPdfByteIdentical": true,
+  "oldPdfLayoutCounts": [
+    {
+      "case": 1,
+      "exports": [
+        {
+          "scope": "visible",
+          "mirror": false,
+          "previousPages": 5,
+          "pages": 2
+        },
+        {
+          "scope": "visible",
+          "mirror": true,
+          "previousPages": 5,
+          "pages": 2
+        },
+        {
+          "scope": "complete",
+          "mirror": false,
+          "previousPages": 6,
+          "pages": 4
+        },
+        {
+          "scope": "complete",
+          "mirror": true,
+          "previousPages": 6,
+          "pages": 4
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "exports": [
+        {
+          "scope": "visible",
+          "mirror": false,
+          "previousPages": 6,
+          "pages": 3
+        },
+        {
+          "scope": "visible",
+          "mirror": true,
+          "previousPages": 6,
+          "pages": 3
+        },
+        {
+          "scope": "complete",
+          "mirror": false,
+          "previousPages": 6,
+          "pages": 3
+        },
+        {
+          "scope": "complete",
+          "mirror": true,
+          "previousPages": 6,
+          "pages": 3
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "exports": [
+        {
+          "scope": "visible",
+          "mirror": false,
+          "previousPages": 5,
+          "pages": 1
+        },
+        {
+          "scope": "visible",
+          "mirror": true,
+          "previousPages": 5,
+          "pages": 1
+        },
+        {
+          "scope": "complete",
+          "mirror": false,
+          "previousPages": 5,
+          "pages": 1
+        },
+        {
+          "scope": "complete",
+          "mirror": true,
+          "previousPages": 5,
+          "pages": 1
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "exports": [
+        {
+          "scope": "visible",
+          "mirror": false,
+          "previousPages": 3,
+          "pages": 2
+        },
+        {
+          "scope": "visible",
+          "mirror": true,
+          "previousPages": 3,
+          "pages": 2
+        },
+        {
+          "scope": "complete",
+          "mirror": false,
+          "previousPages": 3,
+          "pages": 2
+        },
+        {
+          "scope": "complete",
+          "mirror": true,
+          "previousPages": 3,
+          "pages": 2
+        }
+      ]
+    }
+  ],
+  "pngViewsIdenticalToV1110": 8,
+  "svgConversionsChecked": 27,
+  "newTextExtentsChecked": 18,
+  "errors": [],
+  "limits": [
+    "Software validation in Chromium/Linux using synthetic photographs, not physical printing or a physically validated new body.",
+    "Manual flat X/Y calibration cannot undo perspective, lens distortion or unfold curved body surfaces.",
+    "100 mm ruler checks the printer; a paper sticker test on the real body must check the photo calibration.",
+    "File protocol, native Windows/Edge selectors and actual browser closing policy need verification on the user machine.",
+    "Browser-local recovery also needs an external rcbody backup."
+  ]
+}
