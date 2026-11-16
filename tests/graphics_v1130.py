@@ -20,7 +20,7 @@ BRIDGE = """window.__test={project,projectOpen,setTool,setTargetView,setMode,add
 };\n"""
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--baseline',type=Path,required=True);ap.add_argument('--out',type=Path,required=True)
+    ap=argparse.ArgumentParser();ap.add_argument('--baseline',type=Path,required=True);ap.add_argument('--out',type=Path,required=True);ap.add_argument('--project-version',default='1.13.0-rc-bodywork')
     args=ap.parse_args();root=Path(__file__).resolve().parents[1];args.out.mkdir(parents=True,exist_ok=True)
     result={'version':'1.13.0','checks':[],'errors':[],'limits':['Chromium/Linux software checks; no native Windows or physical printing validation.','New-body calibration/cotas remains pending user verification.']}
     def check(condition,name):
@@ -92,7 +92,7 @@ def main():
                     a=old.evaluate('__test.pdf',mirror);b=page.evaluate('__test.pdf',mirror)
                     check(a==b,f'legacy Lola PDF byte-identical: {scope}/{layout}/mirror={mirror}')
                     result['legacyPdf'].append(dict(scope=scope,layout=layout,mirror=mirror,**b))
-        incompatible=json.loads(data);incompatible['version']='1.13.0-rc-bodywork'
+        incompatible=json.loads(data);incompatible['version']=args.project_version
         check(old.evaluate('async s=>await __test.projectOpen(new File([s],"new.rcbody"))',json.dumps(incompatible)) is False,'V1.12.1 rejects V1.13.0 projects explicitly')
         oldctx.close()
         page.evaluate('__test.clear();__test.setMode("stickers");__test.setTargetView("side");__test.setTool("vector")')
@@ -115,7 +115,7 @@ def main():
         creation=page.evaluate('''()=>{const d=__test.project().images.side;const photo=new Image();photo.src=d.src;const known=(t,id)=>t==='vector'&&!!RCVector.get(id);const ref={width:1167,height:768};const b=RCSticker.make(d.stickers,d.stickers.map(s=>s.id),'side',ref,'Apex test',known);return RCSticker.parse(JSON.stringify(b),known);}''')
         check(creation['items'][0]['variant']=='v113_apex_side_1','new vector rcsticker make/parse preserves variant')
         saved=page.evaluate('JSON.stringify(__test.project())')
-        check(json.loads(saved)['version']=='1.13.0-rc-bodywork','new projects identify V1.13.0 explicitly')
+        check(json.loads(saved)['version']==args.project_version,'new projects identify their resource format explicitly')
         open_project(page,saved)
         check(json.loads(page.evaluate('JSON.stringify(__test.project().images)'))==json.loads(before),'new vector project save/reopen lossless')
         result['newPdf']=[]

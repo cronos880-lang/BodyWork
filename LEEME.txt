@@ -1,3 +1,37 @@
+RC BODYWORK V1.13.2 — COLORES DE LOGOS Y CUATRO EMBLEMAS MÁS
+
+LOGOS ORIGINALES
+Al elegir colores antes de colocar un logo, ahora se aplican a la capa nueva.
+Las miniaturas muestran los colores elegidos. Los controles de color aparecen
+antes del catálogo de logos. Puedes cambiar los colores de la capa seleccionada,
+pulsar Aplicar colores elegidos o recuperar Colores originales del logo.
+Restaurar originales se puede deshacer. Se conservan todos los logos J.H.Racing.
+
+EMBLEMAS
+Se mantienen Apex, Pulse y Facet sin cambiar sus imágenes. Se añaden Turbo,
+Fénix, Torque y Corona: siete emblemas en total, con relieve y transparencia,
+preparados con VectorCraft y PhotoCraft. No requieren instalar esos programas.
+
+INSTALACION
+COMPLETO se extrae en una carpeta NUEVA. Abrir su RC_Bodywork.html o su BAT.
+ACTUALIZACION se aplica SOBRE UNA COPIA COMPLETA de V1.13.1, conservando rutas.
+Cerrar la pestaña anterior y abrir el HTML de la copia nueva. Conservar originales.
+No basta con sustituir el HTML: el catálogo rc-graphics.js también es necesario.
+
+Se leen los proyectos anteriores, incluidos V1.13.0/V1.13.1. Guardar con otro
+nombre. Los archivos nuevos se identifican como 1.13.2: las versiones anteriores
+los rechazan para no sustituir los cuatro emblemas desconocidos por otro logo.
+Los diseños antiguos no se recolorean automáticamente al abrirlos. Si contienen
+colores guardados pero modo original, selecciona el logo y pulsa Aplicar colores
+elegidos para activar esos colores.
+
+No se cambia calibración, geometría de colocación, medidas ni impresión.
+Las cotas con carrocerías nuevas siguen pendientes de comprobación del usuario.
+Ver INFORME_V1_13_2.md y PRUEBAS_V1_13_2.json para pruebas y límites.
+
+DOCUMENTACION HISTORICA V1.13.1 (SE CONSERVA A CONTINUACION)
+========================================================================
+
 RC BODYWORK V1.13.1 — CORRECCIÓN DE COLORES Y REVISIÓN DE COLOCACIÓN
 
 Esta actualización corrige la desaparición de los emblemas nuevos al recolorear:

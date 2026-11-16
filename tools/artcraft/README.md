@@ -34,3 +34,7 @@ Fuentes oficiales: [VectorCraft](https://github.com/storytold/vectorcraft/releas
 ## Corrección V1.13.1
 
 La receta incrusta los PNG de emblemas en `rc-graphics.js` además de conservar los archivos originales: Canvas puede leer y recolorear sus píxeles al abrir el HTML localmente sin depender del origen de archivos externos. Es imprescindible conservar esa incrustación al reconstruir.
+
+## V1.13.2
+
+La receta añade cuatro emblemas originales (Turbo, Fénix, Torque y Corona) en `assets/emblemas/v1132/`, conserva los tres anteriores y vuelve a incrustar los siete PNG. `VERIFICACION_CLI_V1_13_2.json` recoge las operaciones y hashes de los 29 recursos producidos (18 SVG, siete PNG y cuatro iconos).

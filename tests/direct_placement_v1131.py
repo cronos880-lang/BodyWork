@@ -6,7 +6,7 @@ from playwright.sync_api import sync_playwright
 from urllib.parse import urlparse,unquote
 import argparse,mimetypes,json,runpy
 root=Path(__file__).resolve().parents[1]
-parser=argparse.ArgumentParser();parser.add_argument('--out',type=Path,required=True);out=parser.parse_args().out;out.mkdir(parents=True,exist_ok=True)
+parser=argparse.ArgumentParser();parser.add_argument('--out',type=Path,required=True);parser.add_argument('--all-emblems',action='store_true');args=parser.parse_args();out=args.out;out.mkdir(parents=True,exist_ok=True)
 module=runpy.run_path(str(root/'tests/interaction_v1131.py'));bridge=module['BASE_BRIDGE']+module['EXTRA']
 bridge+='''window.__test.surface=view=>{const d=imgs[view];let best=null,bestD=Infinity;for(let y=5;y<d.h-5;y+=5)for(let x=5;x<d.w-5;x+=5)if(d.bodyAlpha[(y*d.w+x)*4+3]>150){const dist=(x/d.w-.5)**2+(y/d.h-.5)**2;if(dist<bestD){bestD=dist;best={x:x/d.w,y:y/d.h};}}return best;};\n'''
 fixture=json.loads((root/'examples/Lola_VIP_Edu.rcbody').read_text())
@@ -25,8 +25,9 @@ with sync_playwright() as p:
  page.route('http://localhost/**',route);page.goto('http://localhost/RC_Bodywork.html')
  assert page.evaluate('async s=>__test.projectOpen(new File([s],"fixture.rcbody"))',json.dumps(fixture))
  page.locator('#mode-stickers').click();page.locator('details').evaluate_all('(ds)=>ds.forEach(d=>d.open=false)')
+ badges=page.evaluate('RCGraphics.badges.map(v=>v.id)') if args.all_emblems else ['badge_apex','badge_pulse','badge_facet']
  for view in ['side','top']:
-  for kind,id in [('logo','badge_apex'),('logo','badge_pulse'),('logo','badge_facet'),('logo','logo_01'),('vector','v113_apex_side_1' if view=='side' else 'v113_apex_top_L'),('text',None),('kit',None)]:
+  for kind,id in [('logo',id) for id in badges]+[('logo','logo_01'),('vector','v113_apex_side_1' if view=='side' else 'v113_apex_top_L'),('text',None),('kit',None)]:
    page.evaluate('__test.clear()');page.locator('#target-'+view).click();page.locator('[data-tool='+kind+']').click()
    if kind=='text':id=page.locator('#variant-grid .variant-btn').first.get_attribute('data-variant')
    if kind=='kit':id=page.evaluate('__test.rasterCatalogue',view)[0]

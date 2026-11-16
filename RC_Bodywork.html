@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RC Bodywork V1.13.1 · Biblioteca gráfica</title>
+<title>RC Bodywork V1.13.2 · Biblioteca gráfica</title>
 <style>
 :root{color-scheme:dark;--bg:#0e131b;--surface:#181f2a;--surface2:#1c2532;--edge:#344355;--text:#e8eef7;--muted:#9fb0c7;--accent:#428cf2}
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,'Segoe UI',Arial,sans-serif}
@@ -185,7 +185,7 @@ header{gap:14px;padding-inline:16px}header .mark{flex-shrink:0}header h1{font-si
 #variant-grid[data-background="dark"] .vector-preview{background:#131b27}
 #variant-grid .graphics-empty{grid-column:1/-1;padding:18px 10px;color:var(--muted);text-align:center}
 #variant-grid .variant-btn[aria-pressed="true"]{border-color:#9dccff;box-shadow:0 0 0 1px #9dccff}
-</style></head><body><header><div class="mark">🏎</div><div><h1>RC Bodywork <span style="font-weight:400;color:#95badf">V1.13.1</span></h1><small>Diseño de pintura · Pro10 y otras carrocerías</small></div>
+</style></head><body><header><div class="mark">🏎</div><div><h1>RC Bodywork <span style="font-weight:400;color:#95badf">V1.13.2</span></h1><small>Diseño de pintura · Pro10 y otras carrocerías</small></div>
 <nav class="mode-tabs" aria-label="Herramienta activa"><button type="button" id="mode-paint" class="mode-tab active" aria-pressed="true">◉ &nbsp; Pintura</button><button type="button" id="mode-stickers" class="mode-tab" aria-pressed="false">✦ &nbsp; Pegatinas</button></nav>
 <div class="actions"><button class="btn" id="new">Nuevo</button><button class="btn" id="open">Abrir proyecto</button><button class="btn" id="save">Guardar proyecto</button><button class="btn" id="export">Exportar pegatinas PDF</button><button class="btn secondary" id="exit">Salir</button></div></header>
 <div class="recovery-bar"><div class="calibration-toolbar"><button type="button" class="btn secondary" id="calibration-open">Calibración y plantillas</button><span id="calibration-summary" role="status">Importa fotos o carga una plantilla</span></div><div class="recovery-tools"><span id="recovery-status" role="status" data-state="ready">Preparando autoguardado local…</span><button type="button" id="recovery-versions">Versiones y recuperación</button><span id="recovery-banner" hidden><span>Hay una sesión local disponible.</span><button type="button" id="recovery-resume">Recuperar última sesión</button><button type="button" id="recovery-dismiss">Ahora no</button></span></div></div>
@@ -254,10 +254,10 @@ header{gap:14px;padding-inline:16px}header .mark{flex-shrink:0}header h1{font-si
 <button class="sticker-type" data-tool="tribal" type="button" style="display:none"><span class="tool-symbol tribal-symbol">ϟ</span><strong>Tribales</strong></button><button class="sticker-type" data-tool="kit" type="button"><span class="tool-symbol"><img src="assets/ui/v113/kit.svg" alt=""></span><strong>Piezas racing</strong></button>
 </div>
 <div class="tool-card variant-card"><div class="mini-title" id="variant-title">Variaciones laterales</div><div id="variant-help" class="variant-help"></div><div id="graphics-browser" hidden><div class="graphics-filters"><label>Buscar diseño<input type="search" id="graphics-search" placeholder="Nombre o familia…" autocomplete="off"></label><label>Familia<select id="graphics-family"><option value="">Todas las familias</option></select></label></div><div class="graphics-surface"><label>Fondo de miniaturas<select id="graphics-background"><option value="checker">Transparente</option><option value="light">Claro</option><option value="dark">Oscuro</option></select></label><button type="button" id="graphics-reset" class="btn secondary">Limpiar filtros</button></div><p id="graphics-count" class="variant-help" role="status" aria-live="polite"></p><div id="graphics-palettes" class="graphics-palettes" role="group" aria-label="Combinaciones de dos colores"></div><p class="variant-help">Las combinaciones se aplican a la capa vectorial seleccionada o al próximo diseño. El fondo de miniaturas no se imprime.</p></div><div id="variant-grid" class="variant-grid"></div></div>
-<div class="tool-card"><div class="mini-title">Colores y creación</div><p id="color-context" class="variant-help" aria-live="polite"></p>
+<div class="tool-card" id="creation-tools"><div class="mini-title">Colores y creación</div><p id="color-context" class="variant-help" aria-live="polite"></p>
 <label class="field-row" id="text-field"><span>Texto</span><input id="sticker-text" maxlength="24" type="text" value="J.H.Racing" placeholder="Escribe un texto"></label>
 <label class="field-row"><span>Color principal</span><input id="sticker-color" type="color" value="#171a22"></label><label class="field-row"><span>Color secundario / acento</span><input id="sticker-accent" type="color" value="#f42c38"></label>
-<div class="click-tip"></div>
+<div id="logo-color-tools" hidden><p id="logo-color-state" class="variant-help" role="status" aria-live="polite"></p><button type="button" class="btn" id="logo-apply-colors">Aplicar colores elegidos</button> <button type="button" class="btn secondary" id="logo-original-colors">Colores originales del logo</button></div><div class="click-tip"></div>
 <div class="add-options"><button type="button" class="btn secondary" id="add-selected-view">+ Añadir a Lateral</button></div>
 </div>
 <div class="tool-card selected-card" id="selected-controls" hidden><div class="mini-title">Pegatina seleccionada</div>
@@ -571,7 +571,7 @@ function openExportDialog(){
  const dlg=$('export-dialog');
  if(!dlg.open)dlg.showModal();
 }
-function project(){return {app:'RC_Bodywork',version:'1.13.0-rc-bodywork',name:projectName,designId:autosaver?.docId||null,color:colors[active][0],mode:mode,targetView:targetView,images:Object.fromEntries(['top','side'].map(k=>[k,imgs[k]?{src:imgs[k].src,name:imgs[k].name,demo:imgs[k].demo,stickers:imgs[k].stickers,...(imgs[k].calibration?{calibration:JSON.parse(JSON.stringify(imgs[k].calibration))}:{})}:null]))}}
+function project(){return {app:'RC_Bodywork',version:'1.13.2-rc-bodywork',name:projectName,designId:autosaver?.docId||null,color:colors[active][0],mode:mode,targetView:targetView,images:Object.fromEntries(['top','side'].map(k=>[k,imgs[k]?{src:imgs[k].src,name:imgs[k].name,demo:imgs[k].demo,stickers:imgs[k].stickers,...(imgs[k].calibration?{calibration:JSON.parse(JSON.stringify(imgs[k].calibration))}:{})}:null]))}}
 async function finishMetricInput(){try{if(metricEditor?.busy)await metricEditor.pending;return true;}catch(e){toast('No se pudo completar: corrige la medida pendiente.');return false;}}
 async function projectSave(){
  if(appLoading){toast('No se pudo guardar: espera a que termine la carga actual.');return false;}
@@ -610,7 +610,7 @@ async function projectOpen(file,options={}){if(!file)return false;
  try{
   if(file.size>90e6)throw Error('Proyecto demasiado grande (límite de 90 MB)');
   const p=JSON.parse(await file.text());
-  if(p.app!=='RC_Bodywork'||!['0.1-auto','0.2-stickers','0.21-stickers-variants','0.22-stickers-variants','0.23-stickers-variants','0.24-stickers-racing','0.25-racing-catalog','0.26-body-geometry','0.27-pro-racing','0.28-side-kits','0.29-more-kits','0.30-kit-pieces-free','0.31-piece-by-piece','0.32-piece-editor','0.34-new-liveries','0.35-new-liveries','0.36-loose-pieces-fixed','0.37-six-new-triptychs','0.38-raster-zoom','0.39-jhr-fonts','0.40-logos-and-complete','0.41-view-selector-save','0.42-top-catalog','0.43-top-split-lr','0.44-top-split-5pieces','0.45-top-correct-5parts','0.47-real-design-zones','0.48-upper-color-crop','0.49-erase-crop-top-colors','1.0-rc-bodywork','1.1-rc-bodywork','1.2-rc-bodywork','1.3-rc-bodywork','1.4-rc-bodywork','1.4.1-rc-bodywork','1.4.2-rc-bodywork','1.4.3-rc-bodywork','1.4.4-rc-bodywork','1.4.5-rc-bodywork','1.4.6-rc-bodywork','1.4.7-rc-bodywork','1.4.8-rc-bodywork','1.4.9-rc-bodywork','1.5.0-rc-bodywork','1.6.0-rc-bodywork','1.7.0-rc-bodywork','1.8.0-rc-bodywork','1.9.0-rc-bodywork','1.10.0-rc-bodywork','1.11.0-rc-bodywork','1.12.0-rc-bodywork','1.13.0-rc-bodywork'].includes(p.version))throw Error('Formato no compatible');
+  if(p.app!=='RC_Bodywork'||!['0.1-auto','0.2-stickers','0.21-stickers-variants','0.22-stickers-variants','0.23-stickers-variants','0.24-stickers-racing','0.25-racing-catalog','0.26-body-geometry','0.27-pro-racing','0.28-side-kits','0.29-more-kits','0.30-kit-pieces-free','0.31-piece-by-piece','0.32-piece-editor','0.34-new-liveries','0.35-new-liveries','0.36-loose-pieces-fixed','0.37-six-new-triptychs','0.38-raster-zoom','0.39-jhr-fonts','0.40-logos-and-complete','0.41-view-selector-save','0.42-top-catalog','0.43-top-split-lr','0.44-top-split-5pieces','0.45-top-correct-5parts','0.47-real-design-zones','0.48-upper-color-crop','0.49-erase-crop-top-colors','1.0-rc-bodywork','1.1-rc-bodywork','1.2-rc-bodywork','1.3-rc-bodywork','1.4-rc-bodywork','1.4.1-rc-bodywork','1.4.2-rc-bodywork','1.4.3-rc-bodywork','1.4.4-rc-bodywork','1.4.5-rc-bodywork','1.4.6-rc-bodywork','1.4.7-rc-bodywork','1.4.8-rc-bodywork','1.4.9-rc-bodywork','1.5.0-rc-bodywork','1.6.0-rc-bodywork','1.7.0-rc-bodywork','1.8.0-rc-bodywork','1.9.0-rc-bodywork','1.10.0-rc-bodywork','1.11.0-rc-bodywork','1.12.0-rc-bodywork','1.13.0-rc-bodywork','1.13.2-rc-bodywork'].includes(p.version))throw Error('Formato no compatible');
   for(const photo of Object.values(p.images||{}))for(const s of (Array.isArray(photo?.stickers)?photo.stickers:[]))if(s.metricScale!=null&&!RCDim.validScale(s.metricScale))throw Error('Escala de milímetros no válida.');
   for(const photo of Object.values(p.images||{}))if(photo&&(typeof photo.src!=='string'||!/^data:image\/(jpeg|png|webp);base64,/.test(photo.src)))throw Error('Foto no válida');
   for(const w of ['top','side'])if(p.images?.[w]?.calibration)RCCalibration.validate(w,p.images[w].calibration);
@@ -853,6 +853,7 @@ const STICKER_VARIANTS={
  tribal:[{id:"fang",name:"Triple Flame"},{id:"hook",name:"Flame Vortex"},{id:"blade",name:"Razor Flames"},{id:"scorpion",name:"Aero Talon"},{id:"flame1",name:"Five Fingers"},{id:"flame2",name:"Fire Storm"},{id:"claw",name:"Claw Motion"},{id:"thorn",name:"Barbed Fury"},{id:"serpent",name:"Dragon Sweep"},{id:"vortex",name:"Spiral Blade"},{id:"shark",name:"Raptor Wing"},{id:"phoenix",name:"Phoenix Race"},{id:"ghost",name:"Ghost Flames"},{id:"dagger",name:"Dagger Trails"},{id:"afterburn",name:"Afterburner"},{id:"storm",name:"Storm Claws"},{id:"night",name:"Night Blade"},{id:"saw",name:"Sawtooth"},{id:"jet",name:"Jet Wings"},{id:"hurricane",name:"Hurricane GT"}]
 };
 const currentVariant={vector:'vec_aero',logo:'logo_01',text:'logo_racing',stripe:'single',tribal:'fang'};
+let logoDraftTint=false;
 // Se conservan los trazados históricos para poder abrir proyectos antiguos,
 // pero no figuran ya entre los diseños disponibles.
 STICKER_VARIANTS.text.push(...RCText.styles.map(v=>({id:v.id,name:v.name})));
@@ -1672,6 +1673,7 @@ function refreshStickerUI(){
  $('sticker-height').value=found.sy||100;$('height-value').textContent=(found.sy||100)+'%';
  $('sticker-angle').value=found.angle;$('angle-value').textContent=found.angle+'°';
  $('sticker-color').value=found.color;$('sticker-accent').value=found.accent||'#f42c38';
+ if(found.type==='logo')logoDraftTint=!!found.logoTintEnabled;
  if(found.type==='text')$('sticker-text').value=found.text;
  currentTool=found.type;currentVariant[found.type]=found.variant||currentVariant[found.type];document.querySelectorAll('.sticker-type').forEach(x=>x.classList.toggle('active',x.dataset.tool===currentTool));$('text-field').hidden=currentTool!=='text';renderVariantGrid();
  }
@@ -1699,8 +1701,18 @@ function refreshColorContext(){
 function renderVariantGrid(){
  refreshColorContext();
  const grid=$('variant-grid');if(!grid)return;grid.replaceChildren();
+ const card=grid.closest('.variant-card'),creation=$('creation-tools');
+ if(currentTool==='logo'){if(card.previousElementSibling!==creation)card.before(creation);}
+ else if(card.nextElementSibling!==creation)card.after(creation);
  grid.classList.toggle('racing-art-grid',currentTool!=='kit');grid.classList.toggle('kit-art-grid',currentTool==='kit');grid.classList.toggle('top-racing-grid',currentTool==='kit'&&targetView==='top');
  $('graphics-browser').hidden=currentTool!=='vector';
+ $('logo-color-tools').hidden=currentTool!=='logo';
+ if(currentTool==='logo'){
+  const active=selected?.which===targetView&&imgs[targetView]?.stickers.find(s=>s.id===selected.id&&s.type==='logo');
+  const tinted=active?!!active.logoTintEnabled:logoDraftTint;
+  $('logo-color-state').textContent=(tinted?'Colores personalizados':'Colores originales')+' · '+(active?'Cambia los colores de la capa seleccionada.':'Cambia un color para preparar el próximo logo.');
+  $('logo-original-colors').disabled=$('logo-apply-colors').disabled=!!active?.locked;
+ }
  $('variant-title').textContent=currentTool==='vector'?'Biblioteca vectorial · dos colores':currentTool==='logo'?'Emblemas nuevos y logos del equipo':currentTool==='text'?'Texto con estilo de logo':currentTool==='kit'?(targetView==='top'?'Decoraciones superiores seccionadas':'Piezas racing laterales'):'Variaciones laterales';
  let previousFamily='';
  const viewVectors=RCVector.forView(targetView);
@@ -1720,7 +1732,13 @@ function renderVariantGrid(){
   const b=document.createElement('button');b.type='button';b.className='variant-btn'+(currentVariant[currentTool]===v.id?' active':'');b.dataset.variant=v.id;
   if(currentTool==='logo'){
    const family=v.id.startsWith('badge_')?'Emblemas · relieve y transparencia':'Logos originales J.H.Racing';if(family!==previousFamily){const hd=document.createElement('div');hd.className='piece-family';hd.textContent=family;grid.append(hd);previousFamily=family;}
-   const im=document.createElement('img');im.className='racing-preview';im.alt=v.name;im.src=LOGO_INLINE_IMAGES[v.id];im.classList.add('logo-catalog-preview');b.append(im);
+   const activeLogo=selected?.which===targetView&&imgs[targetView]?.stickers.find(s=>s.id===selected.id&&s.type==='logo');
+   const tint=activeLogo?!!activeLogo.logoTintEnabled:logoDraftTint;
+   const source=logoTinted({variant:v.id,color:$('sticker-color').value,accent:$('sticker-accent').value,logoTintEnabled:tint});
+   const preview=document.createElement('canvas');preview.width=440;preview.height=280;preview.className='racing-preview logo-catalog-preview';preview.setAttribute('role','img');preview.setAttribute('aria-label',v.name+(tint?' · colores personalizados':' · colores originales'));
+   const cx=preview.getContext('2d'),width=source?.naturalWidth||source?.width,height=source?.naturalHeight||source?.height;
+   if(width&&height){const scale=Math.min(420/width,260/height);cx.drawImage(source,(440-width*scale)/2,(280-height*scale)/2,width*scale,height*scale);}
+   b.append(preview);
   }else if(currentTool==='vector'){
    const im=document.createElement('img');im.className='racing-preview vector-preview';im.alt=v.name;im.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(RCVector.svg(v.id,$('sticker-color').value,$('sticker-accent').value));b.setAttribute('aria-pressed',String(currentVariant.vector===v.id));b.append(im);
   }else{
@@ -1736,7 +1754,7 @@ function renderVariantGrid(){
   const nm=document.createElement('div');nm.className='name';nm.textContent=v.name;b.append(nm);
   b.onclick=()=>setVariant(v.id);grid.append(b);
  }
- $('variant-help').textContent=currentTool==='vector'?'18 diseños nuevos: Apex, Pulse y Facet. Recursos SVG de dos colores sin fondo, con miniaturas nítidas al ampliar. Se conservan todos los diseños anteriores.':currentTool==='logo'?'Tres emblemas originales con relieve y transparencia, preparados con VectorCraft y PhotoCraft. Se conservan tus 12 logos J.H.Racing. Los colores son editables; sus formas y letras no son texto editable.':currentTool==='text'?'Escribe tu nombre y prueba los estilos de logo, con dos colores. El texto sigue siendo editable.':currentTool==='kit'?(targetView==='top'?'Las decoraciones superiores se dividen por trazos reales: exterior e interior a izquierda y derecha, y centro solo si corresponde. Las cinco/cuatro piezas se colocan y ajustan individualmente.':'Tres primeros diseños en tramos; los tres últimos completos. Puedes moverlos, ampliarlos y girarlos.'):'Diseños de la biblioteca';
+ $('variant-help').textContent=currentTool==='vector'?'18 diseños nuevos: Apex, Pulse y Facet. Recursos SVG de dos colores sin fondo, con miniaturas nítidas al ampliar. Se conservan todos los diseños anteriores.':currentTool==='logo'?'Siete emblemas en relieve y tus 12 logos J.H.Racing. Las miniaturas muestran los colores elegidos. El principal modifica letras/fondo; el acento, los detalles de color. Puedes recuperar los colores originales. Las letras de los logos no son texto editable.':currentTool==='text'?'Escribe tu nombre y prueba los estilos de logo, con dos colores. El texto sigue siendo editable.':currentTool==='kit'?(targetView==='top'?'Las decoraciones superiores se dividen por trazos reales: exterior e interior a izquierda y derecha, y centro solo si corresponde. Las cinco/cuatro piezas se colocan y ajustan individualmente.':'Tres primeros diseños en tramos; los tres últimos completos. Puedes moverlos, ampliarlos y girarlos.'):'Diseños de la biblioteca';
 }
 function refreshKitParts(kit){
  const list=$('kit-parts-list');list.replaceChildren();
@@ -1814,7 +1832,7 @@ function addSticker(which,x,y){
  if(d.stickers.length>=100){toast('Máximo de 100 capas por vista.');return;}
  const defaultSize=currentTool==='vector'?(RCVector.get(currentVariant.vector)?.sourceVariant?34:which==='top'?14:75):currentTool==='kit'&&isRasterPiece(currentVariant.kit)?100:(currentTool==='logo'?38:currentTool==='kit'?34:currentTool==='text'?33:currentTool==='stripe'?43:42);
  const pal=currentTool==='kit'?kitDefaultPalette(currentVariant.kit):[$('sticker-color').value,$('sticker-accent').value];
- const s={id:nextStickerId++,eraseRects:[],cutRect:null,type:currentTool,text:currentTool==='logo'?'J.H.Racing':($('sticker-text').value.trim().slice(0,24)||'J.H.Racing'),logoTintEnabled:false,color:pal[0],accent:pal[1],size:defaultSize,sx:100,sy:100,angle:0,x,y,tintEnabled:false,rasterCrop:currentTool==='kit'&&isRasterPiece(currentVariant[currentTool]),variant:currentVariant[currentTool],parts:currentTool==='kit'&&!isLoosePieceVariant(currentVariant[currentTool])&&!isRasterPiece(currentVariant[currentTool])?defaultKitParts(currentVariant[currentTool]):{}};
+ const s={id:nextStickerId++,eraseRects:[],cutRect:null,type:currentTool,text:currentTool==='logo'?'J.H.Racing':($('sticker-text').value.trim().slice(0,24)||'J.H.Racing'),logoTintEnabled:currentTool==='logo'&&logoDraftTint,color:pal[0],accent:pal[1],size:defaultSize,sx:100,sy:100,angle:0,x,y,tintEnabled:false,rasterCrop:currentTool==='kit'&&isRasterPiece(currentVariant[currentTool]),variant:currentVariant[currentTool],parts:currentTool==='kit'&&!isLoosePieceVariant(currentVariant[currentTool])&&!isRasterPiece(currentVariant[currentTool])?defaultKitParts(currentVariant[currentTool]):{}};
  storeUndo();d.stickers.push(s);selectSticker(which,s.id);markDirty();refreshStickerUI();redrawAll();
 }
 function addCentered(which){const d=imgs[which];if(!d){toast('Importa primero una foto en esa vista');return}
@@ -2017,7 +2035,7 @@ function installStickers(){
  $('add-selected-view').onclick=()=>addCentered(targetView);
  function updateSelectedStickerColor(channel,value){
   const s=selected&&imgs[selected.which]?.stickers.find(a=>a.id===selected.id);
-  if(!s){if(currentTool==='vector'||currentTool==='text')renderVariantGrid();refreshColorContext();return;}
+  if(!s){if(currentTool==='logo')logoDraftTint=true;if(['vector','text','logo'].includes(currentTool))renderVariantGrid();refreshColorContext();return;}
   if(s.locked)return;
   if(isRasterPiece(s.variant)){
    if(!s.tintEnabled&&s.variant.startsWith('foto_')){
@@ -2027,13 +2045,26 @@ function installStickers(){
    s.tintEnabled=true;
   }
   s[channel]=value;
-  if(s.type==='logo')s.logoTintEnabled=true;
+  if(s.type==='logo'){s.logoTintEnabled=true;logoDraftTint=true;}
   if(isRasterPiece(s.variant)){
    $('sticker-color').value=s.color;
    $('sticker-accent').value=s.accent;
   }
-  markDirty();redrawAll();if(currentTool==='vector'||currentTool==='text')renderVariantGrid();refreshColorContext();
+  markDirty();redrawAll();if(['vector','text','logo'].includes(currentTool))renderVariantGrid();refreshColorContext();
  }
+ $('logo-apply-colors').onclick=()=>{
+  const layer=selected?.which===targetView&&imgs[targetView]?.stickers.find(s=>s.id===selected.id&&s.type==='logo');
+  if(layer?.locked)return;
+  const color=$('sticker-color').value,accent=$('sticker-accent').value;
+  if(layer&&(!layer.logoTintEnabled||layer.color!==color||layer.accent!==accent)){storeUndo();layer.logoTintEnabled=true;layer.color=color;layer.accent=accent;markDirty();}
+  logoDraftTint=true;renderVariantGrid();refreshColorContext();redrawAll();
+ };
+ $('logo-original-colors').onclick=()=>{
+  const layer=selected?.which===targetView&&imgs[targetView]?.stickers.find(s=>s.id===selected.id&&s.type==='logo');
+  if(layer?.locked)return;
+  if(layer?.logoTintEnabled){storeUndo();layer.logoTintEnabled=false;markDirty();}
+  logoDraftTint=false;renderVariantGrid();refreshColorContext();redrawAll();
+ };
  $('sticker-color').oninput=$('sticker-color').onchange=e=>updateSelectedStickerColor('color',e.target.value);
  $('crop-cancel').onclick=()=>cropCancel();
  $('crop-restore').onclick=cropRestore;
