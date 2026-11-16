@@ -1,0 +1,21 @@
+{
+  "complete": {
+    "livePreviewChanges": true,
+    "chosenColoursApplied": true,
+    "sevenEmblemsPresent": true,
+    "restoreOriginalExact": true,
+    "errors": []
+  },
+  "updated": {
+    "livePreviewChanges": true,
+    "chosenColoursApplied": true,
+    "sevenEmblemsPresent": true,
+    "restoreOriginalExact": true,
+    "errors": []
+  },
+  "archivesSHA256": {
+    "RC_Bodywork_V1_13_2_ACTUALIZACION.zip": "95084a20647dc2f96d31bc675e1d43333e7a286dfd2902a9b377ed007447ccb2",
+    "RC_Bodywork_V1_13_2_COMPLETO.zip": "d367664127184bab7dfaddd907ffccff36bf7ce4427c7f4a0230a61ff9653396"
+  },
+  "updatedCopyMatchesSource": true
+}
