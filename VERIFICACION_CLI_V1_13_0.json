@@ -1,0 +1,56 @@
+{
+  "tools": {
+    "vectorcraft": "0.24.1",
+    "photocraft": "0.23.1",
+    "figcraft": "0.18.1"
+  },
+  "officialPackagesSHA256": {
+    "vectorcraft": "a090514252fde145495ac6fc65d6ff1311d698998e57ba434d5d0896c3d1fbfa",
+    "photocraft": "4383aef67a07cc370ad250a6ed60015205d3e6c463faf3ff4b0f67b8178ccfc8",
+    "figcraft": "8276d2ac55c6f77f7af3a411a9b00415d3feb0b59607a54523311340e653fc19"
+  },
+  "commandsExecuted": 35,
+  "operations": [
+    {
+      "tool": "vectorcraft",
+      "commands": 21
+    },
+    {
+      "tool": "photocraft",
+      "commands": 6
+    },
+    {
+      "tool": "figcraft",
+      "commands": 8
+    }
+  ],
+  "outputs": {
+    "assets/vectoriales/v113/v113_apex_center.svg": "e2351c709418789bfb6c8bd3ed944038908f1fee165b2307de75d540309fc958",
+    "assets/vectoriales/v113/v113_apex_side_1.svg": "b4f19c072a09f8eb69d74ab3db51d635537d77750988c75ed359ec06d8f22a18",
+    "assets/vectoriales/v113/v113_apex_side_2.svg": "2ad721590c2995a543f42a37d4e3e9e2a0025c6ad89af577eacf2857421f99d7",
+    "assets/vectoriales/v113/v113_apex_side_3.svg": "63cd4f28ff303ed063e8377bb034ebd628e54cc29e24ee204cd80314ab89c79c",
+    "assets/vectoriales/v113/v113_apex_top_L.svg": "9f8adb59a45f92bcb90a7f86b61d5bfc1b359ceda9043a4d6a07fad6b03b7411",
+    "assets/vectoriales/v113/v113_apex_top_R.svg": "3f77c0c4f0c68f3ff5d485177d3bae3b99df16b56dd027005ade7fb0fa975ec8",
+    "assets/vectoriales/v113/v113_facet_center.svg": "7c1fa0bfc6f78e250d6a9b33f331d296d8f6de67910da9fb2dc8d5fe1de28996",
+    "assets/vectoriales/v113/v113_facet_side_1.svg": "e6e478ba6a52a7fb5cb0c8c0d0696b3967d5b2b70add46c9af5a7a2aba7825fa",
+    "assets/vectoriales/v113/v113_facet_side_2.svg": "b6c40cd0835e36f56e4318c85b56afdf5db43a4ac444b9c0e1bfc9cabc23d312",
+    "assets/vectoriales/v113/v113_facet_side_3.svg": "52870dece2a9748b74abb3e11bb00b14ed063d66fda26d27f4512ee29e5a5eda",
+    "assets/vectoriales/v113/v113_facet_top_L.svg": "5ee02af81a1b89544ccd5c29e9e091ad85101ecb3630f779518d60ae1e35fc5f",
+    "assets/vectoriales/v113/v113_facet_top_R.svg": "891beb7a43c68392e99ef997c0068734b44faaeb05c39d9b01e02dc5b9a67542",
+    "assets/vectoriales/v113/v113_pulse_center.svg": "b435fd7a014fa93c55cd2fac452d2bd9a05b97728f087cdac1d1a71138f3b521",
+    "assets/vectoriales/v113/v113_pulse_side_1.svg": "38a1eb8b6cd7ab3251192067cd3a12f80fd73bdf8d322099c86bf1421c83a993",
+    "assets/vectoriales/v113/v113_pulse_side_2.svg": "bf9babb4054bb224cbfac379bd2cd2aac21af16b2a7be39edd97094c45ba6b82",
+    "assets/vectoriales/v113/v113_pulse_side_3.svg": "2a54bcbd10b8569cf2c171698f042151499d066cdcb21e91ffe80817bebff286",
+    "assets/vectoriales/v113/v113_pulse_top_L.svg": "033f1a74d6ea021bfd8bb2d4257942d5d78fdb44fa3645857ea596e51fe4ef31",
+    "assets/vectoriales/v113/v113_pulse_top_R.svg": "4939e3fd8e4f3bdd891e1a0ba240261195a0c286ccbf8b73c95682da248fb7d2",
+    "assets/emblemas/v113/badge_apex.png": "5c0de014b899f9686cfa44f4bef802f70e621cb4dc8a7eaa604f106dcda7f10c",
+    "assets/emblemas/v113/badge_facet.png": "88439cfe0e99e226fa9ee6215509c860a86b971821bd6ea7666887a1736adb64",
+    "assets/emblemas/v113/badge_pulse.png": "e15bf035ffb724f0987aed24e0a6d26d8d881a1347192561cfad3ad9fe5b2167",
+    "assets/ui/v113/kit.svg": "d19a36aad80c5b8bfdbb4fc1e52847b76409cf99a6b17932550d3d5a301e6163",
+    "assets/ui/v113/logo.svg": "2325f58606ad316911a33a8874f5e0975284109560a7fc45239d470c27cea0ed",
+    "assets/ui/v113/text.svg": "345c6b922d5423ed2a34724af361dd982d84b0ad777a09da67e328b571882ff2",
+    "assets/ui/v113/vector.svg": "443a77bab11f0c2c06172176a4886daee2aafc10ed63bcd259804ef53292b25c"
+  },
+  "scope": "Tools installed only in the Codex Linux workspace; no native Windows validation. No external engine dependency in the app.",
+  "rebuildSameHashes": true
+}

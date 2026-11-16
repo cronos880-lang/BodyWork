@@ -1,0 +1,1 @@
+[{"command": "vector.create", "params": {"path": "M12 2 L21 6 L19 16 L12 22 L5 16 L3 6 Z M7 15 L12 6 L17 15 M9 12 L15 12", "name": "Bodywork logo", "props": {"fill": "none", "stroke": "#b4d6ff", "strokeWeight": 1.5, "strokeJoin": "round", "strokeCap": "round"}}}]

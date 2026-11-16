@@ -1,0 +1,314 @@
+{
+  "version": "1.13.0",
+  "checks": [
+    "36 legacy vector renders pixel-identical",
+    "18 additional vector designs",
+    "12 original logos render pixel-identical",
+    "18 paths nonempty, not clipped at border, hit-test works",
+    "18 SVG exports match Canvas at source size (1 channel level tolerance)",
+    "accent-insensitive search",
+    "empty search explains reset",
+    "family filter lateral",
+    "family filter superior incl mirrored pair and center",
+    "preview-only background switch",
+    "no horizontal document overflow at 1920px",
+    "catalogue accessible at 1920px",
+    "no horizontal document overflow at 1366px",
+    "catalogue accessible at 1366px",
+    "no horizontal document overflow at 1024px",
+    "catalogue accessible at 1024px",
+    "no horizontal document overflow at 780px",
+    "catalogue accessible at 780px",
+    "no horizontal document overflow at 600px",
+    "catalogue accessible at 600px",
+    "legacy Lola editor views pixel-identical",
+    "legacy Lola PDF byte-identical: visible/legacy/mirror=False",
+    "legacy Lola PDF byte-identical: visible/legacy/mirror=True",
+    "legacy Lola PDF byte-identical: visible/optimized/mirror=False",
+    "legacy Lola PDF byte-identical: visible/optimized/mirror=True",
+    "legacy Lola PDF byte-identical: complete/legacy/mirror=False",
+    "legacy Lola PDF byte-identical: complete/legacy/mirror=True",
+    "legacy Lola PDF byte-identical: complete/optimized/mirror=False",
+    "legacy Lola PDF byte-identical: complete/optimized/mirror=True",
+    "V1.12.1 rejects V1.13.0 projects explicitly",
+    "add new vector through UI",
+    "palette recolours selected vector",
+    "one undo restores entire two-colour palette",
+    "locked layer palette cannot alter project",
+    "catalogue search/background do not mutate photos or layers",
+    "new vector rcsticker make/parse preserves variant",
+    "new projects identify V1.13.0 explicitly",
+    "new vector project save/reopen lossless",
+    "new vector real PDF: visible/mirror=False",
+    "new vector real PDF: visible/mirror=True",
+    "new vector real PDF: complete/mirror=False",
+    "new vector real PDF: complete/mirror=True",
+    "add 3 PhotoCraft emblems through catalogue UI",
+    "3 high-resolution emblems retain transparent antialiased edges",
+    "processed emblems save and reopen",
+    "processed emblems real PDF mirror=False",
+    "processed emblems real PDF mirror=True",
+    "all 18 new variants survive project loading",
+    "18 new vector layers recover after page reload with photos intact",
+    "no unexpected JavaScript errors"
+  ],
+  "errors": [],
+  "limits": [
+    "Chromium/Linux software checks; no native Windows or physical printing validation.",
+    "New-body calibration/cotas remains pending user verification."
+  ],
+  "browser": "154.0.8037.57",
+  "newVectorCoverage": [
+    {
+      "id": "v113_apex_side_1",
+      "ink": 68470,
+      "border": 0,
+      "hit": 66177,
+      "differing": 0
+    },
+    {
+      "id": "v113_apex_side_2",
+      "ink": 67670,
+      "border": 0,
+      "hit": 63364,
+      "differing": 0
+    },
+    {
+      "id": "v113_apex_side_3",
+      "ink": 97095,
+      "border": 0,
+      "hit": 94241,
+      "differing": 0
+    },
+    {
+      "id": "v113_apex_top_L",
+      "ink": 81342,
+      "border": 0,
+      "hit": 77978,
+      "differing": 0
+    },
+    {
+      "id": "v113_apex_top_R",
+      "ink": 81341,
+      "border": 0,
+      "hit": 77988,
+      "differing": 0
+    },
+    {
+      "id": "v113_apex_center",
+      "ink": 148579,
+      "border": 0,
+      "hit": 146240,
+      "differing": 0
+    },
+    {
+      "id": "v113_pulse_side_1",
+      "ink": 82658,
+      "border": 0,
+      "hit": 79960,
+      "differing": 0
+    },
+    {
+      "id": "v113_pulse_side_2",
+      "ink": 73491,
+      "border": 0,
+      "hit": 70325,
+      "differing": 0
+    },
+    {
+      "id": "v113_pulse_side_3",
+      "ink": 100870,
+      "border": 0,
+      "hit": 97320,
+      "differing": 0
+    },
+    {
+      "id": "v113_pulse_top_L",
+      "ink": 65880,
+      "border": 0,
+      "hit": 63107,
+      "differing": 0
+    },
+    {
+      "id": "v113_pulse_top_R",
+      "ink": 65852,
+      "border": 0,
+      "hit": 63093,
+      "differing": 0
+    },
+    {
+      "id": "v113_pulse_center",
+      "ink": 154091,
+      "border": 0,
+      "hit": 151914,
+      "differing": 0
+    },
+    {
+      "id": "v113_facet_side_1",
+      "ink": 85404,
+      "border": 0,
+      "hit": 82537,
+      "differing": 0
+    },
+    {
+      "id": "v113_facet_side_2",
+      "ink": 119338,
+      "border": 0,
+      "hit": 116131,
+      "differing": 0
+    },
+    {
+      "id": "v113_facet_side_3",
+      "ink": 73767,
+      "border": 0,
+      "hit": 71337,
+      "differing": 0
+    },
+    {
+      "id": "v113_facet_top_L",
+      "ink": 88226,
+      "border": 0,
+      "hit": 85785,
+      "differing": 0
+    },
+    {
+      "id": "v113_facet_top_R",
+      "ink": 88239,
+      "border": 0,
+      "hit": 85784,
+      "differing": 0
+    },
+    {
+      "id": "v113_facet_center",
+      "ink": 128080,
+      "border": 0,
+      "hit": 125242,
+      "differing": 0
+    }
+  ],
+  "legacyPdf": [
+    {
+      "scope": "visible",
+      "layout": "legacy",
+      "mirror": false,
+      "pages": 5,
+      "hash": "10d6cd21ebff8c0170880cc90d78cc55ac08f97dac99680b76c2ae6df39386b2"
+    },
+    {
+      "scope": "visible",
+      "layout": "legacy",
+      "mirror": true,
+      "pages": 5,
+      "hash": "28aeefb9d508fcbba597dc3ffad42e8c6bf984edcf96fd0be0ac9397c985352f"
+    },
+    {
+      "scope": "visible",
+      "layout": "optimized",
+      "mirror": false,
+      "pages": 2,
+      "hash": "cd40609e1c384cb2cf2c5816ee26faf3a90255ebb17c6b60bc15c8d1979db682"
+    },
+    {
+      "scope": "visible",
+      "layout": "optimized",
+      "mirror": true,
+      "pages": 2,
+      "hash": "a8256d1615cfe2c6339f46bf25ca1307243eba8168eed37cf4bda96e326b4b8c"
+    },
+    {
+      "scope": "complete",
+      "layout": "legacy",
+      "mirror": false,
+      "pages": 6,
+      "hash": "673a33a747b6bd821c2841814f96232013f59327d8a64919a184033ddf0443fa"
+    },
+    {
+      "scope": "complete",
+      "layout": "legacy",
+      "mirror": true,
+      "pages": 6,
+      "hash": "082931c5212dcb4b5b1b511609eccffe7332ba4f873a7cc60e922ac135bba86b"
+    },
+    {
+      "scope": "complete",
+      "layout": "optimized",
+      "mirror": false,
+      "pages": 4,
+      "hash": "d906909c65c7a9272ad03764087e987bc3778ab832a56f9ba5f52ac2fae5d3c3"
+    },
+    {
+      "scope": "complete",
+      "layout": "optimized",
+      "mirror": true,
+      "pages": 4,
+      "hash": "886a71943c2e557eb80578938151494883f54a736ccbc8d7c6740b1ca2768f66"
+    }
+  ],
+  "newPdf": [
+    {
+      "scope": "visible",
+      "mirror": false,
+      "pages": 1,
+      "hash": "33c08792636fb56fc25180492f28a6e6314cfa88b08a74485224e8cd0028c36c"
+    },
+    {
+      "scope": "visible",
+      "mirror": true,
+      "pages": 1,
+      "hash": "cf0b199c42b494bf254348eb503ce8dbd3982da7161458e9dc08bdf647c5952a"
+    },
+    {
+      "scope": "complete",
+      "mirror": false,
+      "pages": 1,
+      "hash": "c62ef5863979f354794fa093ee7513f76bd248781a939b10d19bb18594b55ad7"
+    },
+    {
+      "scope": "complete",
+      "mirror": true,
+      "pages": 1,
+      "hash": "5868ba092820134eec348a6997110d963871e749de17dc5e5dba46efdd784182"
+    }
+  ],
+  "processedEmblems": [
+    {
+      "id": "badge_apex",
+      "w": 1160,
+      "h": 1030,
+      "transparent": 395340,
+      "opaque": 796140,
+      "semi": 3320
+    },
+    {
+      "id": "badge_pulse",
+      "w": 1480,
+      "h": 940,
+      "transparent": 976550,
+      "opaque": 410772,
+      "semi": 3878
+    },
+    {
+      "id": "badge_facet",
+      "w": 1260,
+      "h": 1020,
+      "transparent": 476770,
+      "opaque": 804970,
+      "semi": 3460
+    }
+  ],
+  "status": "passed",
+  "cliBuildReceipt": "VERIFICACION_CLI_V1_13_0.json",
+  "unchangedCoreFiles": [
+    "rc-calibration.js",
+    "rc-calibration-ui.js",
+    "rc-dimensions.js",
+    "rc-metric-editor.js",
+    "rc-print.js",
+    "rc-pack.js",
+    "rc-recovery.js",
+    "rc-text.js",
+    "rc-layers.js",
+    "INICIAR_RC_Bodywork.bat"
+  ],
+  "previousDeliveriesUnchanged": true
+}

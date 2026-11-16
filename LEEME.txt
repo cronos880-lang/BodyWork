@@ -1,3 +1,45 @@
+RC BODYWORK V1.13.0 — BIBLIOTECA GRÁFICA
+
+NUEVA ENTREGA PARA EVALUACIÓN DEL USUARIO
+Base del programa: V1.12.1. Las instrucciones del repositorio son V2.3.1.
+Extrae el ZIP COMPLETO en una carpeta NUEVA. El paquete contiene la carpeta
+RC_Bodywork_V1_13_0. Abre su RC_Bodywork.html o el BAT de Windows.
+No extraigas encima de tu versión actual. Conserva íntegra V1.12.1 y sus proyectos.
+No se han cambiado calibración, cotas, escala de impresión ni recuperación.
+La prueba de cotas con carrocerías nuevas sigue pendiente del usuario.
+
+NOVEDADES
+- Tres emblemas originales con degradados, bisel y transparencia preparados
+  con VectorCraft y PhotoCraft; cuatro iconos de categorías creados con FigCraft.
+- 18 recursos vectoriales originales con contornos preparados con VectorCraft: Apex, Pulse y Facet. Cada familia incluye
+  tres laterales, izquierda/derecha superiores y centro. Sin fondo fotográfico.
+- Conserva los 36 recursos vectoriales anteriores y el resto del catálogo.
+- Buscar por nombre/familia, filtro de familia, contador y limpiar filtros.
+- Miniaturas SVG nítidas y fondos transparente/claro/oscuro solo en el catálogo.
+- Cinco combinaciones de dos colores. En una capa vectorial, un paso de Atrás
+  restaura los dos colores. Las capas bloqueadas no se recolorean.
+
+COMPATIBILIDAD Y VUELTA A LA VERSIÓN ACTUAL
+Abre COPIAS de tus .rcbody anteriores y guarda con otro nombre. V1.13.0 lee los
+proyectos anteriores; los proyectos guardados aquí se identifican como V1.13.0
+para que V1.12.1 los rechace, evitando sustituir dibujos nuevos por otros.
+Las creaciones .rcsticker con gráficos nuevos necesitan esta versión. No se ha
+cambiado el formato de calibración .rctemplate ni los formatos .rcsticker 1/2/3.
+Para volver, abre tu V1.12.1 y tus archivos originales. No necesitas desinstalar
+nada. La recuperación depende del navegador/perfil/origen y no reemplaza las
+copias externas .rcbody. El programa no convierte archivos automáticamente.
+
+Lee INFORME_V1_13_0.md y PRUEBAS_V1_13_0.json para las comprobaciones y límites.
+No hay motores, dependencias ni servicios nuevos: continúa funcionando offline.
+Los SVG se incluyen en assets/vectoriales/v113/ y los emblemas PNG en
+assets/emblemas/v113/. VectorCraft, PhotoCraft y FigCraft se usaron realmente
+para preparar recursos; sus motores no se incorporan al programa.
+
+DOCUMENTACIÓN HISTÓRICA DE LA BASE V1.12.0 (SE CONSERVA A CONTINUACIÓN)
+La ubicación de la calibración ya cambió en V1.12.1 a la barra superior.
+Los resultados y versiones citados a continuación corresponden a esa base.
+========================================================================
+
 RC BODYWORK V1.12.0 — CALIBRACION Y PLANTILLAS DE OTRAS CARROCERIAS
 
 INSTALACION
