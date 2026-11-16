@@ -31,7 +31,7 @@ function validate(bundle,known){
   return item;
  });
  if(Math.max(...items.map(s=>s.x))-Math.min(...items.map(s=>s.x))>1||Math.max(...items.map(s=>s.y))-Math.min(...items.map(s=>s.y))>1)throw Error('La composición no cabe en su referencia de colocación.');
- return {app:'RC_Bodywork_Sticker',format:bundle.format,createdWith:'1.13.0',name:text(bundle.name)||'Mi pegatina',view:bundle.view,reference:{width:ref.width,height:ref.height,...(bundle.format===3?{calibration:RCCalibration.reference(ref.calibration)}:{})},items};
+ return {app:'RC_Bodywork_Sticker',format:bundle.format,createdWith:'1.13.1',name:text(bundle.name)||'Mi pegatina',view:bundle.view,reference:{width:ref.width,height:ref.height,...(bundle.format===3?{calibration:RCCalibration.reference(ref.calibration)}:{})},items};
 }
 function make(layers,ids,view,reference,name,known){
  const wanted=new Set(ids),items=layers.filter(s=>wanted.has(s.id));if(!items.length)throw Error('Selecciona las capas o el grupo que quieres guardar.');

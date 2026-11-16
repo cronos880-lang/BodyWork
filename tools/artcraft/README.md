@@ -30,3 +30,7 @@ Esta operación de desarrollo actualiza recursos de V1.13.0 y `rc-graphics.js`; 
 Los motores de estas herramientas no se integran en el programa: Bodywork consume sus SVG/PNG ya preparados, sin conexión ni instalación adicional. Los recursos originales nuevos no incluyen marcas o imágenes de ArtCraft. Los binarios conservan sus licencias originales y no se redistribuyen en el ZIP de Bodywork.
 
 Fuentes oficiales: [VectorCraft](https://github.com/storytold/vectorcraft/releases/tag/v0.24.1), [PhotoCraft](https://github.com/storytold/photocraft/releases/tag/v0.23.1), [FigCraft](https://github.com/storytold/figcraft/releases/tag/v0.18.1).
+
+## Corrección V1.13.1
+
+La receta incrusta los PNG de emblemas en `rc-graphics.js` además de conservar los archivos originales: Canvas puede leer y recolorear sus píxeles al abrir el HTML localmente sin depender del origen de archivos externos. Es imprescindible conservar esa incrustación al reconstruir.

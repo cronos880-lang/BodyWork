@@ -1,0 +1,2227 @@
+{
+  "version": "1.13.1",
+  "status": "passed",
+  "browser": "154.0.8037.57",
+  "reportedBrowser": "Chrome (user report; version/platform not supplied)",
+  "originReproduction": {
+    "before": {
+      "mode": "cross-origin resource model of local-file Canvas restriction",
+      "errors": [
+        "Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data.",
+        "Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data."
+      ]
+    },
+    "after": {
+      "mode": "cross-origin resource model of local-file Canvas restriction",
+      "errors": []
+    },
+    "fileProtocol": "Blocked by administrator; not bypassed."
+  },
+  "interaction": {
+    "version": "1.13.1",
+    "checks": [
+      "36 recoloured legacy logo rasters match V1.12.1 byte for byte",
+      "75 recolour cases retain every alpha value and visible ink",
+      "emblem silver rims/highlights unchanged by either paint colour",
+      "UI places side/badge_apex",
+      "side/badge_apex canvas remains readable after recolour",
+      "real pointer drag side/badge_apex/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/badge_apex/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/badge_apex/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate side/badge_apex",
+      "UI places side/badge_pulse",
+      "side/badge_pulse canvas remains readable after recolour",
+      "real pointer drag side/badge_pulse/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/badge_pulse/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/badge_pulse/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate side/badge_pulse",
+      "UI places side/badge_facet",
+      "side/badge_facet canvas remains readable after recolour",
+      "real pointer drag side/badge_facet/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/badge_facet/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/badge_facet/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate side/badge_facet",
+      "UI places side/logo_01",
+      "side/logo_01 canvas remains readable after recolour",
+      "real pointer drag side/logo_01/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/logo_01/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/logo_01/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate side/logo_01",
+      "UI places side/logo_04",
+      "side/logo_04 canvas remains readable after recolour",
+      "real pointer drag side/logo_04/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/logo_04/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/logo_04/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate side/logo_04",
+      "UI places side/logo_11",
+      "side/logo_11 canvas remains readable after recolour",
+      "real pointer drag side/logo_11/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/logo_11/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/logo_11/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate side/logo_11",
+      "UI places side/vec_aero",
+      "side/vec_aero canvas remains readable after recolour",
+      "real pointer drag side/vec_aero/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/vec_aero/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/vec_aero/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate side/vec_aero",
+      "UI places side/v113_apex_side_1",
+      "side/v113_apex_side_1 canvas remains readable after recolour",
+      "real pointer drag side/v113_apex_side_1/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/v113_apex_side_1/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/v113_apex_side_1/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate side/v113_apex_side_1",
+      "UI places top/badge_apex",
+      "top/badge_apex canvas remains readable after recolour",
+      "real pointer drag top/badge_apex/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/badge_apex/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/badge_apex/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate top/badge_apex",
+      "UI places top/badge_pulse",
+      "top/badge_pulse canvas remains readable after recolour",
+      "real pointer drag top/badge_pulse/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/badge_pulse/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/badge_pulse/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate top/badge_pulse",
+      "UI places top/badge_facet",
+      "top/badge_facet canvas remains readable after recolour",
+      "real pointer drag top/badge_facet/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/badge_facet/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/badge_facet/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate top/badge_facet",
+      "UI places top/logo_01",
+      "top/logo_01 canvas remains readable after recolour",
+      "real pointer drag top/logo_01/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/logo_01/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/logo_01/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate top/logo_01",
+      "UI places top/logo_04",
+      "top/logo_04 canvas remains readable after recolour",
+      "real pointer drag top/logo_04/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/logo_04/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/logo_04/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate top/logo_04",
+      "UI places top/logo_11",
+      "top/logo_11 canvas remains readable after recolour",
+      "real pointer drag top/logo_11/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/logo_11/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/logo_11/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate top/logo_11",
+      "UI places top/vec_blade_L",
+      "top/vec_blade_L canvas remains readable after recolour",
+      "real pointer drag top/vec_blade_L/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/vec_blade_L/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/vec_blade_L/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate top/vec_blade_L",
+      "UI places top/v113_apex_top_L",
+      "top/v113_apex_top_L canvas remains readable after recolour",
+      "real pointer drag top/v113_apex_top_L/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/v113_apex_top_L/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/v113_apex_top_L/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate top/v113_apex_top_L",
+      "mixed emblem/vector/text stack remains drawable and readable",
+      "recoloured mixed stack survives project save/reopen",
+      "recoloured mixed stack recovers after browser page reload",
+      "recoloured mixed stack PDF visible/mirror=False",
+      "recoloured mixed stack PDF visible/mirror=True",
+      "recoloured mixed stack PDF complete/mirror=False",
+      "recoloured mixed stack PDF complete/mirror=True",
+      "emblem operations never request external PNG files",
+      "no uncaught JS/security errors across colour, placement, save, recovery or PDF"
+    ],
+    "errors": [],
+    "limits": [
+      "file:// blocked by environment administrator; tested with cross-origin image URLs instead, with normal Canvas origin security.",
+      "Chromium/Linux only; native Windows, physical printing and new-body cotas remain unverified."
+    ],
+    "browser": "154.0.8037.57",
+    "colourMatrix": [
+      {
+        "id": "logo_01",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 33005,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_01",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 33005,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_01",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 28418,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_01",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 33005,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_01",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 33005,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 30469,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 30469,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 25355,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 30469,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 30469,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 33567,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 33567,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 30370,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 33567,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 33567,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 28747,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 25410,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 28747,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 28747,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 28747,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 31693,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 31693,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 27133,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 31693,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 31693,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 26387,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 26387,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 23240,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 26387,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 26387,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 23016,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 23016,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 18851,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 23016,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 23016,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 16012,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 16012,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 14091,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 16012,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 16012,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 25971,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 23431,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 25971,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 25971,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 25971,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 24476,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 22156,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 24476,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 24476,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 24476,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 30682,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 30682,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 28031,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 30682,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 30682,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 35885,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 32459,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 35885,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 35885,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 35885,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      }
+    ],
+    "pdfs": [
+      {
+        "scope": "visible",
+        "mirror": false,
+        "pages": 2,
+        "hash": "cb38e05a1e275bef1f7a1853dc6b6fd2b8685efce16ce42c861accdb9c84366b"
+      },
+      {
+        "scope": "visible",
+        "mirror": true,
+        "pages": 2,
+        "hash": "968bccfce80c052082a2a0ee49d90807cea218feca67b1536dc5fd9760a5337c"
+      },
+      {
+        "scope": "complete",
+        "mirror": false,
+        "pages": 2,
+        "hash": "adad4f82d3adcf33ec784cc85fed456d0dcaf9083b028a2eb753783380fafea8"
+      },
+      {
+        "scope": "complete",
+        "mirror": true,
+        "pages": 2,
+        "hash": "cd0cfb4f27aa44911facacdd22ad910d733c688ad0b884f2c82dfaa295f3e145"
+      }
+    ],
+    "status": "passed"
+  },
+  "textAndRacingInteraction": {
+    "version": "1.13.1",
+    "checks": [
+      "36 recoloured legacy logo rasters match V1.12.1 byte for byte",
+      "75 recolour cases retain every alpha value and visible ink",
+      "emblem silver rims/highlights unchanged by either paint colour",
+      "UI places side/logo_racing",
+      "side/logo_racing canvas remains readable after recolour",
+      "real pointer drag side/logo_racing/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/logo_racing/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/logo_racing/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate side/logo_racing",
+      "UI places side/foto_01_tramo_1",
+      "side/foto_01_tramo_1 canvas remains readable after recolour",
+      "real pointer drag side/foto_01_tramo_1/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/foto_01_tramo_1/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag side/foto_01_tramo_1/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate side/foto_01_tramo_1",
+      "UI places top/logo_racing",
+      "top/logo_racing canvas remains readable after recolour",
+      "real pointer drag top/logo_racing/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/logo_racing/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/logo_racing/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate top/logo_racing",
+      "UI places top/sup47_01_outerL",
+      "top/sup47_01_outerL canvas remains readable after recolour",
+      "real pointer drag top/sup47_01_outerL/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/sup47_01_outerL/angle=0",
+      "drag selects existing layer without creating a duplicate",
+      "real pointer drag top/sup47_01_outerL/angle=37",
+      "drag selects existing layer without creating a duplicate",
+      "Fix/reselect does not duplicate top/sup47_01_outerL",
+      "mixed emblem/vector/text stack remains drawable and readable",
+      "recoloured mixed stack survives project save/reopen",
+      "recoloured mixed stack recovers after browser page reload",
+      "recoloured mixed stack PDF visible/mirror=False",
+      "recoloured mixed stack PDF visible/mirror=True",
+      "recoloured mixed stack PDF complete/mirror=False",
+      "recoloured mixed stack PDF complete/mirror=True",
+      "no uncaught JS/security errors across colour, placement, save, recovery or PDF"
+    ],
+    "errors": [],
+    "limits": [
+      "file:// blocked by environment administrator; tested with cross-origin image URLs instead, with normal Canvas origin security.",
+      "Chromium/Linux only; native Windows, physical printing and new-body cotas remain unverified."
+    ],
+    "browser": "154.0.8037.57",
+    "colourMatrix": [
+      {
+        "id": "logo_01",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 33005,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_01",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 33005,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_01",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 28418,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_01",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 33005,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_01",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 33005,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 30469,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 30469,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 25355,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 30469,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 30469,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 33567,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 33567,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 30370,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 33567,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 33567,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 28747,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 25410,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 28747,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 28747,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 28747,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 31693,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 31693,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 27133,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 31693,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 31693,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 26387,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 26387,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 23240,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 26387,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 26387,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 23016,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 23016,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 18851,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 23016,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 23016,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 16012,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 16012,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 14091,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 16012,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 16012,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 25971,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 23431,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 25971,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 25971,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 25971,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 24476,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 22156,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 24476,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 24476,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 24476,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 30682,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 30682,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 28031,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 30682,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 30682,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 35885,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 32459,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 35885,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 35885,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 35885,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      }
+    ],
+    "pdfs": [
+      {
+        "scope": "visible",
+        "mirror": false,
+        "pages": 2,
+        "hash": "cb38e05a1e275bef1f7a1853dc6b6fd2b8685efce16ce42c861accdb9c84366b"
+      },
+      {
+        "scope": "visible",
+        "mirror": true,
+        "pages": 2,
+        "hash": "968bccfce80c052082a2a0ee49d90807cea218feca67b1536dc5fd9760a5337c"
+      },
+      {
+        "scope": "complete",
+        "mirror": false,
+        "pages": 2,
+        "hash": "adad4f82d3adcf33ec784cc85fed456d0dcaf9083b028a2eb753783380fafea8"
+      },
+      {
+        "scope": "complete",
+        "mirror": true,
+        "pages": 2,
+        "hash": "cd0cfb4f27aa44911facacdd22ad910d733c688ad0b884f2c82dfaa295f3e145"
+      }
+    ],
+    "status": "passed"
+  },
+  "baseRegression": {
+    "version": "1.13.0",
+    "checks": [
+      "36 legacy vector renders pixel-identical",
+      "18 additional vector designs",
+      "12 original logos render pixel-identical",
+      "18 paths nonempty, not clipped at border, hit-test works",
+      "18 SVG exports match Canvas at source size (1 channel level tolerance)",
+      "accent-insensitive search",
+      "empty search explains reset",
+      "family filter lateral",
+      "family filter superior incl mirrored pair and center",
+      "preview-only background switch",
+      "no horizontal document overflow at 1920px",
+      "catalogue accessible at 1920px",
+      "no horizontal document overflow at 1366px",
+      "catalogue accessible at 1366px",
+      "no horizontal document overflow at 1024px",
+      "catalogue accessible at 1024px",
+      "no horizontal document overflow at 780px",
+      "catalogue accessible at 780px",
+      "no horizontal document overflow at 600px",
+      "catalogue accessible at 600px",
+      "legacy Lola editor views pixel-identical",
+      "legacy Lola PDF byte-identical: visible/legacy/mirror=False",
+      "legacy Lola PDF byte-identical: visible/legacy/mirror=True",
+      "legacy Lola PDF byte-identical: visible/optimized/mirror=False",
+      "legacy Lola PDF byte-identical: visible/optimized/mirror=True",
+      "legacy Lola PDF byte-identical: complete/legacy/mirror=False",
+      "legacy Lola PDF byte-identical: complete/legacy/mirror=True",
+      "legacy Lola PDF byte-identical: complete/optimized/mirror=False",
+      "legacy Lola PDF byte-identical: complete/optimized/mirror=True",
+      "V1.12.1 rejects V1.13.0 projects explicitly",
+      "add new vector through UI",
+      "palette recolours selected vector",
+      "one undo restores entire two-colour palette",
+      "locked layer palette cannot alter project",
+      "catalogue search/background do not mutate photos or layers",
+      "new vector rcsticker make/parse preserves variant",
+      "new projects identify V1.13.0 explicitly",
+      "new vector project save/reopen lossless",
+      "new vector real PDF: visible/mirror=False",
+      "new vector real PDF: visible/mirror=True",
+      "new vector real PDF: complete/mirror=False",
+      "new vector real PDF: complete/mirror=True",
+      "add 3 PhotoCraft emblems through catalogue UI",
+      "3 high-resolution emblems retain transparent antialiased edges",
+      "processed emblems save and reopen",
+      "processed emblems real PDF mirror=False",
+      "processed emblems real PDF mirror=True",
+      "all 18 new variants survive project loading",
+      "18 new vector layers recover after page reload with photos intact",
+      "no unexpected JavaScript errors"
+    ],
+    "errors": [],
+    "limits": [
+      "Chromium/Linux software checks; no native Windows or physical printing validation.",
+      "New-body calibration/cotas remains pending user verification."
+    ],
+    "browser": "154.0.8037.57",
+    "newVectorCoverage": [
+      {
+        "id": "v113_apex_side_1",
+        "ink": 68470,
+        "border": 0,
+        "hit": 66177,
+        "differing": 0
+      },
+      {
+        "id": "v113_apex_side_2",
+        "ink": 67670,
+        "border": 0,
+        "hit": 63364,
+        "differing": 0
+      },
+      {
+        "id": "v113_apex_side_3",
+        "ink": 97095,
+        "border": 0,
+        "hit": 94241,
+        "differing": 0
+      },
+      {
+        "id": "v113_apex_top_L",
+        "ink": 81342,
+        "border": 0,
+        "hit": 77978,
+        "differing": 0
+      },
+      {
+        "id": "v113_apex_top_R",
+        "ink": 81341,
+        "border": 0,
+        "hit": 77988,
+        "differing": 0
+      },
+      {
+        "id": "v113_apex_center",
+        "ink": 148579,
+        "border": 0,
+        "hit": 146240,
+        "differing": 0
+      },
+      {
+        "id": "v113_pulse_side_1",
+        "ink": 82658,
+        "border": 0,
+        "hit": 79960,
+        "differing": 0
+      },
+      {
+        "id": "v113_pulse_side_2",
+        "ink": 73491,
+        "border": 0,
+        "hit": 70325,
+        "differing": 0
+      },
+      {
+        "id": "v113_pulse_side_3",
+        "ink": 100870,
+        "border": 0,
+        "hit": 97320,
+        "differing": 0
+      },
+      {
+        "id": "v113_pulse_top_L",
+        "ink": 65880,
+        "border": 0,
+        "hit": 63107,
+        "differing": 0
+      },
+      {
+        "id": "v113_pulse_top_R",
+        "ink": 65852,
+        "border": 0,
+        "hit": 63093,
+        "differing": 0
+      },
+      {
+        "id": "v113_pulse_center",
+        "ink": 154091,
+        "border": 0,
+        "hit": 151914,
+        "differing": 0
+      },
+      {
+        "id": "v113_facet_side_1",
+        "ink": 85404,
+        "border": 0,
+        "hit": 82537,
+        "differing": 0
+      },
+      {
+        "id": "v113_facet_side_2",
+        "ink": 119338,
+        "border": 0,
+        "hit": 116131,
+        "differing": 0
+      },
+      {
+        "id": "v113_facet_side_3",
+        "ink": 73767,
+        "border": 0,
+        "hit": 71337,
+        "differing": 0
+      },
+      {
+        "id": "v113_facet_top_L",
+        "ink": 88226,
+        "border": 0,
+        "hit": 85785,
+        "differing": 0
+      },
+      {
+        "id": "v113_facet_top_R",
+        "ink": 88239,
+        "border": 0,
+        "hit": 85784,
+        "differing": 0
+      },
+      {
+        "id": "v113_facet_center",
+        "ink": 128080,
+        "border": 0,
+        "hit": 125242,
+        "differing": 0
+      }
+    ],
+    "legacyPdf": [
+      {
+        "scope": "visible",
+        "layout": "legacy",
+        "mirror": false,
+        "pages": 5,
+        "hash": "10d6cd21ebff8c0170880cc90d78cc55ac08f97dac99680b76c2ae6df39386b2"
+      },
+      {
+        "scope": "visible",
+        "layout": "legacy",
+        "mirror": true,
+        "pages": 5,
+        "hash": "28aeefb9d508fcbba597dc3ffad42e8c6bf984edcf96fd0be0ac9397c985352f"
+      },
+      {
+        "scope": "visible",
+        "layout": "optimized",
+        "mirror": false,
+        "pages": 2,
+        "hash": "cd40609e1c384cb2cf2c5816ee26faf3a90255ebb17c6b60bc15c8d1979db682"
+      },
+      {
+        "scope": "visible",
+        "layout": "optimized",
+        "mirror": true,
+        "pages": 2,
+        "hash": "a8256d1615cfe2c6339f46bf25ca1307243eba8168eed37cf4bda96e326b4b8c"
+      },
+      {
+        "scope": "complete",
+        "layout": "legacy",
+        "mirror": false,
+        "pages": 6,
+        "hash": "673a33a747b6bd821c2841814f96232013f59327d8a64919a184033ddf0443fa"
+      },
+      {
+        "scope": "complete",
+        "layout": "legacy",
+        "mirror": true,
+        "pages": 6,
+        "hash": "082931c5212dcb4b5b1b511609eccffe7332ba4f873a7cc60e922ac135bba86b"
+      },
+      {
+        "scope": "complete",
+        "layout": "optimized",
+        "mirror": false,
+        "pages": 4,
+        "hash": "d906909c65c7a9272ad03764087e987bc3778ab832a56f9ba5f52ac2fae5d3c3"
+      },
+      {
+        "scope": "complete",
+        "layout": "optimized",
+        "mirror": true,
+        "pages": 4,
+        "hash": "886a71943c2e557eb80578938151494883f54a736ccbc8d7c6740b1ca2768f66"
+      }
+    ],
+    "newPdf": [
+      {
+        "scope": "visible",
+        "mirror": false,
+        "pages": 1,
+        "hash": "33c08792636fb56fc25180492f28a6e6314cfa88b08a74485224e8cd0028c36c"
+      },
+      {
+        "scope": "visible",
+        "mirror": true,
+        "pages": 1,
+        "hash": "cf0b199c42b494bf254348eb503ce8dbd3982da7161458e9dc08bdf647c5952a"
+      },
+      {
+        "scope": "complete",
+        "mirror": false,
+        "pages": 1,
+        "hash": "c62ef5863979f354794fa093ee7513f76bd248781a939b10d19bb18594b55ad7"
+      },
+      {
+        "scope": "complete",
+        "mirror": true,
+        "pages": 1,
+        "hash": "5868ba092820134eec348a6997110d963871e749de17dc5e5dba46efdd784182"
+      }
+    ],
+    "processedEmblems": [
+      {
+        "id": "badge_apex",
+        "w": 1160,
+        "h": 1030,
+        "transparent": 395340,
+        "opaque": 796140,
+        "semi": 3320
+      },
+      {
+        "id": "badge_pulse",
+        "w": 1480,
+        "h": 940,
+        "transparent": 976550,
+        "opaque": 410772,
+        "semi": 3878
+      },
+      {
+        "id": "badge_facet",
+        "w": 1260,
+        "h": 1020,
+        "transparent": 476770,
+        "opaque": 804970,
+        "semi": 3460
+      }
+    ],
+    "status": "passed"
+  },
+  "coreFilesUnchanged": [
+    "rc-calibration.js",
+    "rc-calibration-ui.js",
+    "rc-dimensions.js",
+    "rc-metric-editor.js",
+    "rc-print.js",
+    "rc-pack.js",
+    "rc-recovery.js",
+    "rc-layers.js",
+    "rc-text.js",
+    "rc-vectors.js",
+    "INICIAR_RC_Bodywork.bat"
+  ],
+  "previousDeliveriesUnchanged": true,
+  "existingAssetFilesUnchanged": true,
+  "cliRecipeRebuildIdentical": true,
+  "limits": [
+    "file:// blocked by environment administrator; tested with cross-origin image URLs instead, with normal Canvas origin security.",
+    "Chromium/Linux only; native Windows, physical printing and new-body cotas remain unverified."
+  ],
+  "directCanvasPlacement": {
+    "cases": [
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "badge_apex",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "badge_pulse",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "badge_facet",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "logo_01",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "vector",
+        "variant": "v113_apex_side_1",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "text",
+        "variant": "logo_racing",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "kit",
+        "variant": "foto_01_tramo_1",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "badge_apex",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "badge_pulse",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "badge_facet",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "logo_01",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "vector",
+        "variant": "v113_apex_top_L",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "text",
+        "variant": "logo_racing",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "kit",
+        "variant": "sup47_01_outerL",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      }
+    ],
+    "errors": [],
+    "status": "passed"
+  }
+}

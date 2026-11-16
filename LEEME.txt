@@ -1,3 +1,28 @@
+RC BODYWORK V1.13.1 — CORRECCIÓN DE COLORES Y REVISIÓN DE COLOCACIÓN
+
+Esta actualización corrige la desaparición de los emblemas nuevos al recolorear:
+se incrustan sus PNG en rc-graphics.js, como los logos anteriores, evitando
+lecturas de píxeles bloqueadas por el origen de los archivos locales en Chrome.
+El recoloreado conserva los bordes plateados y brillos de los emblemas.
+Los 12 logos J.H.Racing mantienen su algoritmo y resultado anterior.
+
+Instalación recomendada: extraer COMPLETO en una carpeta NUEVA. Abrir su HTML
+con Chrome o Edge. Conservar la versión anterior y abrir copias de los .rcbody.
+ACTUALIZACION se aplica SOBRE UNA COPIA COMPLETA de V1.13.0, manteniendo rutas.
+No copiar únicamente el HTML: también es necesario el rc-graphics.js corregido.
+Cerrar la pestaña anterior y abrir el HTML de la copia actualizada.
+
+Los proyectos V1.13.0 son compatibles con V1.13.1; se conserva el formato 1.13.0.
+No hay conversión de proyectos, cambio de fotos ni de calibración o cotas.
+La prueba de cotas de carrocerías nuevas sigue PENDIENTE del usuario.
+
+Se ha revisado recoloreado y arrastre real con zoom y giro en ambas vistas,
+además de guardado, recuperación y PDF. INFORME_V1_13_1.md y PRUEBAS_V1_13_1.json
+indican las pruebas, evidencias y límites. No se ha probado Windows nativo.
+
+DOCUMENTACIÓN HISTÓRICA V1.13.0 (SE CONSERVA A CONTINUACIÓN)
+========================================================================
+
 RC BODYWORK V1.13.0 — BIBLIOTECA GRÁFICA
 
 NUEVA ENTREGA PARA EVALUACIÓN DEL USUARIO

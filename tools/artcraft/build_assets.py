@@ -3,7 +3,7 @@ Python 3.12 stdlib only. Run in the source checkout, never on user photos/projec
 BWORK_ARTCRAFT_HOME selects the verified CLI packages (default: ../work/artcraft-cli).
 """
 from pathlib import Path
-import hashlib,json,os,subprocess,xml.etree.ElementTree as ET
+import base64,hashlib,json,os,subprocess,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[2]
 TOOLS=Path(os.environ.get('BWORK_ARTCRAFT_HOME',ROOT.parent/'work/artcraft-cli'))
 WORK=ROOT.parent/'work/artcraft-cli/build'
@@ -85,8 +85,9 @@ for id,path in icons.items():
 # Preserve module API, replace only its original catalogue data, add badge metadata.
 p=ROOT/'rc-graphics.js';s=p.read_text();a=s.index('const designs=')+len('const designs=');b=s.index(';\nconst normalize',a)
 s=s[:a]+json.dumps(vectors,ensure_ascii=False,separators=(',',':'))+s[b:]
-badges=[{'id':id,'name':name,'url':f'assets/emblemas/v113/{id}.png'} for id,name,_ in badge_art]
-s=s.replace('designs:Object.freeze(designs),filter','designs:Object.freeze(designs),badges:Object.freeze('+json.dumps(badges,ensure_ascii=False,separators=(',',':'))+'),filter')
+badges=[{'id':id,'name':name,'url':f'assets/emblemas/v113/{id}.png','uri':'data:image/png;base64,'+base64.b64encode((folder/(id+'.png')).read_bytes()).decode('ascii')} for id,name,_ in badge_art]
+a=s.index('return Object.freeze(')
+s=s[:a]+'return Object.freeze({designs:Object.freeze(designs),badges:Object.freeze('+json.dumps(badges,ensure_ascii=False,separators=(',',':'))+'),filter});\n})();\n'
 p.write_text(s)
 outputs=[*sorted((ROOT/'assets/vectoriales/v113').glob('*.svg')),*sorted(folder.glob('*.png')),*sorted(ui.glob('*.svg'))]
 receipt={'tools':VERSIONS,'commands':LOG,'outputs':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in outputs}}
