@@ -1,0 +1,1401 @@
+{
+  "colores": {
+    "version": "1.13.3",
+    "checks": [
+      "8 active relief emblems available (5 preserved + 3 approved)",
+      "100 palette cases preserve alpha and visibly recolour originals/emblems",
+      "8 emblems retain silver rims and highlights",
+      "side/logo_01: colour controls precede catalogue",
+      "side/logo_01: live preview keeps input focus",
+      "side/logo_01: preview changes before placing",
+      "side/logo_01: visible colour state",
+      "side/logo_01: chosen colours applied to new layer",
+      "side/logo_01: selected layer also recolours",
+      "side/logo_01: restore originals is exact",
+      "side/logo_01: undo restores custom colours",
+      "side/logo_04: colour controls precede catalogue",
+      "side/logo_04: live preview keeps input focus",
+      "side/logo_04: preview changes before placing",
+      "side/logo_04: visible colour state",
+      "side/logo_04: chosen colours applied to new layer",
+      "side/logo_04: selected layer also recolours",
+      "side/logo_04: restore originals is exact",
+      "side/logo_04: undo restores custom colours",
+      "side/badge_turbo: colour controls precede catalogue",
+      "side/badge_turbo: live preview keeps input focus",
+      "side/badge_turbo: preview changes before placing",
+      "side/badge_turbo: visible colour state",
+      "side/badge_turbo: chosen colours applied to new layer",
+      "side/badge_turbo: selected layer also recolours",
+      "side/badge_turbo: restore originals is exact",
+      "side/badge_turbo: undo restores custom colours",
+      "side/badge_finish: colour controls precede catalogue",
+      "side/badge_finish: live preview keeps input focus",
+      "side/badge_finish: preview changes before placing",
+      "side/badge_finish: visible colour state",
+      "side/badge_finish: chosen colours applied to new layer",
+      "side/badge_finish: selected layer also recolours",
+      "side/badge_finish: restore originals is exact",
+      "side/badge_finish: undo restores custom colours",
+      "top/logo_01: colour controls precede catalogue",
+      "top/logo_01: live preview keeps input focus",
+      "top/logo_01: preview changes before placing",
+      "top/logo_01: visible colour state",
+      "top/logo_01: chosen colours applied to new layer",
+      "top/logo_01: selected layer also recolours",
+      "top/logo_01: restore originals is exact",
+      "top/logo_01: undo restores custom colours",
+      "top/logo_04: colour controls precede catalogue",
+      "top/logo_04: live preview keeps input focus",
+      "top/logo_04: preview changes before placing",
+      "top/logo_04: visible colour state",
+      "top/logo_04: chosen colours applied to new layer",
+      "top/logo_04: selected layer also recolours",
+      "top/logo_04: restore originals is exact",
+      "top/logo_04: undo restores custom colours",
+      "top/badge_turbo: colour controls precede catalogue",
+      "top/badge_turbo: live preview keeps input focus",
+      "top/badge_turbo: preview changes before placing",
+      "top/badge_turbo: visible colour state",
+      "top/badge_turbo: chosen colours applied to new layer",
+      "top/badge_turbo: selected layer also recolours",
+      "top/badge_turbo: restore originals is exact",
+      "top/badge_turbo: undo restores custom colours",
+      "top/badge_finish: colour controls precede catalogue",
+      "top/badge_finish: live preview keeps input focus",
+      "top/badge_finish: preview changes before placing",
+      "top/badge_finish: visible colour state",
+      "top/badge_finish: chosen colours applied to new layer",
+      "top/badge_finish: selected layer also recolours",
+      "top/badge_finish: restore originals is exact",
+      "top/badge_finish: undo restores custom colours",
+      "both colour channels independently alter every original JHR logo",
+      "original mode before explicit apply",
+      "explicit apply enables selected layer without changing input values",
+      "explicit apply also prepares next original logo",
+      "locked layer disables colour changes and reset",
+      "new resource version protects projects from older catalogues",
+      "custom colours save and reopen intact",
+      "custom colours recover after page reload",
+      "other categories keep their existing control order",
+      "new coloured emblem exports PDF mirror=False",
+      "new coloured emblem exports PDF mirror=True",
+      "no unexpected JavaScript or Canvas origin errors"
+    ],
+    "errors": [],
+    "limits": [
+      "Chromium/Linux only; native Windows/Chrome validation and new-body cotas remain pending."
+    ],
+    "browser": "154.0.8037.57",
+    "colourMatrix": [
+      {
+        "id": "logo_01",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 33005,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_01",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 33005,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_01",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 28418,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_01",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 33005,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_01",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 40215,
+        "changed": 33005,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 30469,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 30469,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 25355,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 30469,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_02",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 33756,
+        "changed": 30469,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 33567,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 33567,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 30370,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 33567,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_03",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 35902,
+        "changed": 33567,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 28747,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 25410,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 28747,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 28747,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_04",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 46418,
+        "changed": 28747,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 31693,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 31693,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 27133,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 31693,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_05",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 34771,
+        "changed": 31693,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 26387,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 26387,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 23240,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 26387,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_06",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 28927,
+        "changed": 26387,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 23016,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 23016,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 18851,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 23016,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_07",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 23669,
+        "changed": 23016,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 16012,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 16012,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 14091,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 16012,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_08",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 18237,
+        "changed": 16012,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 25971,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 23431,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 25971,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 25971,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_09",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 43201,
+        "changed": 25971,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 24476,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 22156,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 24476,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 24476,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_10",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 41803,
+        "changed": 24476,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 30682,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 30682,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 28031,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 30682,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_11",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 33710,
+        "changed": 30682,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 35885,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 32459,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 35885,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 35885,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "logo_12",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 57136,
+        "changed": 35885,
+        "silver": 0,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_apex",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 799460,
+        "changed": 517913,
+        "silver": 279945,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_pulse",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 414650,
+        "changed": 190989,
+        "silver": 221362,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_facet",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 808430,
+        "changed": 534171,
+        "silver": 272298,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_turbo",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 851298,
+        "changed": 558079,
+        "silver": 291443,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_turbo",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 851298,
+        "changed": 558079,
+        "silver": 291443,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_turbo",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 851298,
+        "changed": 558079,
+        "silver": 291443,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_turbo",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 851298,
+        "changed": 558079,
+        "silver": 291443,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_turbo",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 851298,
+        "changed": 558079,
+        "silver": 291443,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_phoenix",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 557726,
+        "changed": 240165,
+        "silver": 314473,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_phoenix",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 557726,
+        "changed": 240165,
+        "silver": 314473,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_phoenix",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 557726,
+        "changed": 240165,
+        "silver": 314473,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_phoenix",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 557726,
+        "changed": 240165,
+        "silver": 314473,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_phoenix",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 557726,
+        "changed": 240165,
+        "silver": 314473,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_panther",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 931341,
+        "changed": 544564,
+        "silver": 381211,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_panther",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 931341,
+        "changed": 544564,
+        "silver": 381211,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_panther",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 931341,
+        "changed": 542316,
+        "silver": 381211,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_panther",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 931341,
+        "changed": 544564,
+        "silver": 381211,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_panther",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 931341,
+        "changed": 544564,
+        "silver": 381211,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_chicane",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 662595,
+        "changed": 318896,
+        "silver": 337774,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_chicane",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 662595,
+        "changed": 318896,
+        "silver": 337774,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_chicane",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 662595,
+        "changed": 318866,
+        "silver": 337774,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_chicane",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 662595,
+        "changed": 318896,
+        "silver": 337774,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_chicane",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 662595,
+        "changed": 318896,
+        "silver": 337774,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_finish",
+        "primary": "#00ff00",
+        "accent": "#0044ff",
+        "alphaMismatch": 0,
+        "ink": 750328,
+        "changed": 370139,
+        "silver": 369565,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_finish",
+        "primary": "#ffffff",
+        "accent": "#000000",
+        "alphaMismatch": 0,
+        "ink": 750328,
+        "changed": 370139,
+        "silver": 369565,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_finish",
+        "primary": "#000000",
+        "accent": "#ffffff",
+        "alphaMismatch": 0,
+        "ink": 750328,
+        "changed": 369894,
+        "silver": 369565,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_finish",
+        "primary": "#ff0000",
+        "accent": "#00ffff",
+        "alphaMismatch": 0,
+        "ink": 750328,
+        "changed": 370139,
+        "silver": 369565,
+        "silverChanged": 0
+      },
+      {
+        "id": "badge_finish",
+        "primary": "#6828ba",
+        "accent": "#ffb8de",
+        "alphaMismatch": 0,
+        "ink": 750328,
+        "changed": 370139,
+        "silver": 369565,
+        "silverChanged": 0
+      }
+    ],
+    "independentChannels": [
+      {
+        "id": "logo_01",
+        "primary": 21529,
+        "accent": 11476
+      },
+      {
+        "id": "logo_02",
+        "primary": 26928,
+        "accent": 3541
+      },
+      {
+        "id": "logo_03",
+        "primary": 21468,
+        "accent": 12099
+      },
+      {
+        "id": "logo_04",
+        "primary": 21600,
+        "accent": 7147
+      },
+      {
+        "id": "logo_05",
+        "primary": 25399,
+        "accent": 6294
+      },
+      {
+        "id": "logo_06",
+        "primary": 21379,
+        "accent": 5008
+      },
+      {
+        "id": "logo_07",
+        "primary": 21364,
+        "accent": 1652
+      },
+      {
+        "id": "logo_08",
+        "primary": 15173,
+        "accent": 839
+      },
+      {
+        "id": "logo_09",
+        "primary": 16240,
+        "accent": 9731
+      },
+      {
+        "id": "logo_10",
+        "primary": 14487,
+        "accent": 9954
+      },
+      {
+        "id": "logo_11",
+        "primary": 21368,
+        "accent": 9314
+      },
+      {
+        "id": "logo_12",
+        "primary": 21280,
+        "accent": 14581
+      }
+    ],
+    "pdfs": [
+      {
+        "mirror": false,
+        "pages": 1,
+        "hash": "3bf54504611c3637e044db399d3bd3015a87b187eabef811e2e1ff668e635baa"
+      },
+      {
+        "mirror": true,
+        "pages": 1,
+        "hash": "ec54f1f58dbd8b54da616e6d1a3145b317d0b02808b6d30af549fa551c8c4d3a"
+      }
+    ],
+    "status": "passed"
+  },
+  "compatibilidad": {
+    "checks": [
+      "historical example opens in both versions",
+      "V1.13.2 project with Torque and Corona opens",
+      "retired IDs are preserved, never replaced",
+      "retired emblems retain identical rendered pixels in three palettes",
+      "legacy project photos, layers and calibration remain identical",
+      "approved replacements visible; Torque and Corona hidden from catalogue",
+      "exactly eight active emblems",
+      "all twelve original logos remain visible",
+      "badge_panther: transparent silhouette, two paint zones, unchanged silver",
+      "badge_chicane: transparent silhouette, two paint zones, unchanged silver",
+      "badge_finish: transparent silhouette, two paint zones, unchanged silver",
+      "new project format saves and reopens",
+      "all three new identifiers survive reopening",
+      "V1.13.2 rejects unknown resource format safely",
+      "old application keeps its current project after rejection",
+      "no JavaScript errors"
+    ],
+    "errors": [],
+    "root": "/workspace/BodyWork",
+    "artwork": [
+      {
+        "id": "badge_panther",
+        "width": 1189,
+        "height": 1172,
+        "transparent": 462167,
+        "solid": 920976,
+        "silver": 382290,
+        "changedSilver": 0,
+        "red": 81138,
+        "dark": 457548
+      },
+      {
+        "id": "badge_chicane",
+        "width": 1349,
+        "height": 921,
+        "transparent": 579834,
+        "solid": 651924,
+        "silver": 338515,
+        "changedSilver": 0,
+        "red": 138032,
+        "dark": 175377
+      },
+      {
+        "id": "badge_finish",
+        "width": 1377,
+        "height": 1007,
+        "transparent": 636311,
+        "solid": 737761,
+        "silver": 372749,
+        "changedSilver": 0,
+        "red": 65953,
+        "dark": 299059
+      }
+    ],
+    "status": "passed",
+    "browser": "154.0.8037.57"
+  },
+  "colocacion": {
+    "cases": [
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "badge_apex",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "badge_pulse",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "badge_facet",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "badge_turbo",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "badge_phoenix",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "badge_panther",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "badge_chicane",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "badge_finish",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "logo",
+        "variant": "logo_01",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "vector",
+        "variant": "v113_apex_side_1",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "text",
+        "variant": "logo_racing",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "side",
+        "type": "kit",
+        "variant": "foto_01_tramo_1",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "badge_apex",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "badge_pulse",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "badge_facet",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "badge_turbo",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "badge_phoenix",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "badge_panther",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "badge_chicane",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "badge_finish",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "logo",
+        "variant": "logo_01",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "vector",
+        "variant": "v113_apex_top_L",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "text",
+        "variant": "logo_racing",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      },
+      {
+        "view": "top",
+        "type": "kit",
+        "variant": "sup47_01_outerL",
+        "clickAndDragPlacesExactlyOne": true,
+        "recolourCanvasReadable": true
+      }
+    ],
+    "errors": [],
+    "status": "passed"
+  }
+}

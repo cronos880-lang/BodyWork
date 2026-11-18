@@ -38,3 +38,7 @@ La receta incrusta los PNG de emblemas en `rc-graphics.js` además de conservar 
 ## V1.13.2
 
 La receta añade cuatro emblemas originales (Turbo, Fénix, Torque y Corona) en `assets/emblemas/v1132/`, conserva los tres anteriores y vuelve a incrustar los siete PNG. `VERIFICACION_CLI_V1_13_2.json` recoge las operaciones y hashes de los 29 recursos producidos (18 SVG, siete PNG y cuatro iconos).
+
+## V1.13.3
+
+Para reconstruir solo Pantera, Chicane y Meta, usa `python tools/artcraft/build_approved_badges.py` con PhotoCraft 0.23.1 y Pillow 12.3.0 en el entorno de desarrollo. La receta parte de los tres PNG transparentes de `sources/v1133/`, ajusta el alfa y los incrusta en el catálogo para su uso sin conexión.

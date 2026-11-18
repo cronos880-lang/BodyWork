@@ -102,3 +102,7 @@ outputs=[*sorted((ROOT/'assets/vectoriales/v113').glob('*.svg')),*sorted((ROOT/'
 receipt={'tools':VERSIONS,'commands':LOG,'outputs':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in outputs}}
 (WORK/'receipt.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2))
 print('CLI build complete:',WORK/'receipt.json')
+
+# Preserve the approved V1.13.3 artwork and legacy compatibility in full rebuilds.
+import runpy
+runpy.run_path(str(ROOT/"tools/artcraft/build_approved_badges.py"), run_name="__main__")

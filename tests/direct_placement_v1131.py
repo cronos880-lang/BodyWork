@@ -25,7 +25,7 @@ with sync_playwright() as p:
  page.route('http://localhost/**',route);page.goto('http://localhost/RC_Bodywork.html')
  assert page.evaluate('async s=>__test.projectOpen(new File([s],"fixture.rcbody"))',json.dumps(fixture))
  page.locator('#mode-stickers').click();page.locator('details').evaluate_all('(ds)=>ds.forEach(d=>d.open=false)')
- badges=page.evaluate('RCGraphics.badges.map(v=>v.id)') if args.all_emblems else ['badge_apex','badge_pulse','badge_facet']
+ badges=page.evaluate('RCGraphics.badges.filter(v=>!v.retired).map(v=>v.id)') if args.all_emblems else ['badge_apex','badge_pulse','badge_facet']
  for view in ['side','top']:
   for kind,id in [('logo',id) for id in badges]+[('logo','logo_01'),('vector','v113_apex_side_1' if view=='side' else 'v113_apex_top_L'),('text',None),('kit',None)]:
    page.evaluate('__test.clear()');page.locator('#target-'+view).click();page.locator('[data-tool='+kind+']').click()
